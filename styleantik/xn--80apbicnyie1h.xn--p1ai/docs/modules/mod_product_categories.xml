@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module">
+    <name>Модуль категорий товаров</name>
+    <creationDate>15.11.2005</creationDate>
+    <author>Соерен Ебенхард, перевод команда Rusvirtuemart </author>
+    <copyright>RusVirtueMart выпускается под GNU/GPLicense</copyright>
+    <authorEmail>admin@virtuemart.ru</authorEmail>
+    <authorUrl>http://www.virtuemart.ru</authorUrl>
+    <version>1.2</version>
+    <description>Показывает категории товаров RusVirtueMart. !!!Требует установки Главного модуля RusVirtueMart!!!</description>
+    <files>
+         <filename module="mod_product_categories">mod_product_categories.php</filename>
+    </files>
+    <params>
+      <param name="menutype" type="list" default="jscook" label="Вид отображения категории"
+      description="Вы можете выставить в вид *Список ссылок*,  *Дерево(dTree)*, тогда структура категорий будут отображены в виде дерева. Также может быть JsCook и Трансменю это яваскриптовые менюхи. Ознакомьтесь с ними практическим путем.">
+        <option value="links">Список ссылок</option>
+        <option value="dtree">Дерево dTree</option>
+        <option value="jscook">JSCook</option>
+        <option value="transmenu">TransMenu</option>
+      </param>
+      <param name="jscook_type" type="list" default="menu" label="тип JSCook" description="Стиль для отображения категорий:Меню или Дерево">
+          <option value="menu">Меню</option>
+          <option value="tree">Дерево</option>
+      </param>
+      <param name="jscookMenu_style" type="text" default="ThemeOffice" label=" Стиль JSCook меню" description="Стиль для JSCookMenu. Заполняется если вы выбрали стиль отображения  *JSCook* и *Меню*  в предыдущих параметрах" />
+      <param name="menu_orientation" type="list" default="hbr" label="Ориентация  JSCook меню" description="Если вы выбрали *JSCook* и *Меню* в предыдущих параметрах: Может быть горизонтальным или вертикальным!">
+          <option value="hbr">Горизонтально</option>
+          <option value="vbr">Вертикально</option>
+      </param>
+      <param name="jscookTree_style" type="text" default="ThemeXP" label="Стиль *JSCook* дерева" description="Стиль для дерева JSCook. Заполняется если вы выбрали стиль отображения *JSCook* и *Дерево* в предыдущих параметрах" />
+      <param name="root_label" type="text" default="Магазин" label="Корневой узел дерева (dTree)" description="Все что вы здесь введете будет отображено в корневом узле дерева." />
+	  
+    <param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS для модуля" description="Суффикс добавляется к названию класса css модуля (table.moduletable), это позволяет задавать стиль только для этого модуля" />
+    <param name="class_sfx" type="text" default="" label="Суффикс класса CSS для меню" description="Суффикс позволяет задать стиль только для этого меню" />
+    </params>
+
+</mosinstall>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template">
+<name>dc-no1</name>
+<creationDate>08.01.2006 20:00:00</creationDate>
+<author>F.Rischmueller</author>
+<copyright>(c) 2006 </copyright>
+<authorEmail>mail@design-cibox.de</authorEmail>
+<authorUrl>http://www.design-cibox.de</authorUrl>
+<version>1.0</version>
+<description>Dieses Template wurde für Design-Cibox.de erstellt.</description>
+<files>
+<filename>index.php</filename>
+<filename>template_thumbnail.png</filename>
+<filename>favicon.ico</filename>
+</files>
+<images>
+<filename>images/back.gif</filename>
+<filename>images/bb.gif</filename>
+<filename>images/bg.gif</filename>
+<filename>images/bullet.png</filename>
+<filename>images/center-bg.jpg</filename>
+<filename>images/center-left.jpg</filename>
+<filename>images/center-right.jpg</filename>
+<filename>images/foot-bg.jpg</filename>
+<filename>images/foot-left.jpg</filename>
+<filename>images/foot-right.jpg</filename>
+<filename>images/head-bg.jpg</filename>
+<filename>images/head-left.jpg</filename>
+<filename>images/head-right.jpg</filename>
+<filename>images/indent1.png</filename>
+<filename>images/lb.gif</filename>
+<filename>images/modul.jpg</filename>
+<filename>images/rb.gif</filename>
+<filename>images/read.gif</filename>
+<filename>images/shadowl.jpg</filename>
+<filename>images/shadowr.jpg</filename>
+<filename>images/top-button.jpg</filename>
+<filename>images/topmenu-bg.jpg</filename>
+<filename>images/topmenu-button.jpg</filename>
+<filename>images/topmenu-left.jpg</filename>
+<filename>images/topmenu-right.jpg</filename>
+</images>
+<css>
+<filename>css/template_css.css</filename>
+</css>
+</mosinstall>

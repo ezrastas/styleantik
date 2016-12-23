@@ -1,0 +1,516 @@
+/*@@@@@@@@@@@@ COMMENTS ARE ABOVE TARGET ITEMS @@@@@@@@@@@@ */
+/*
+* MBT BusinessII - A Mambo 4.5.1 template
+* @version 1.0
+* @Copyright (C) 2003, 2004 by MamboTheme.com. All rights reserved!
+* @License http://www.mambotheme.com
+*/
+
+
+<LINK REL="alternate" TITLE="Mambo Product News" HREF="http://www.blueflameit.ltd.uk/index2.php?option=com_rss&no_html=1" TYPE="application/rss+xml">
+/*** General Mambo Styles
+* --------------------
+* The following are styles that are often used
+* site wide by Mambo to provide better control
+* of content's appearences.
+*/
+/*###################### OVERALL MAMBO STYLES######################*/
+BODY {
+  text-align: left;
+  vertical-align: top;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:11px;
+  color:474747;
+  margin           : 0px;
+  padding          : 0px;
+  background-color : #8CA0B4;
+}
+
+td, tr, p, div {
+	text-align: left;
+	vertical-align: top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#474747;
+}
+
+ul
+{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+li
+{
+line-height: 15px;
+padding-left: 10px;
+padding-top: 0px;
+background-image: url(../images/arrow2.jpg) ;
+background-repeat: no-repeat;
+background-position: left;
+}
+hr {
+  background       : #C0C0C0;
+  height           : 1px;
+  width            : 100%;
+}
+
+hr.separator {}
+/* not used in to page nav bar but used for nicknames in forum posts by Simpleboard */
+.pagenavbar {}
+/* as the name implies, this is for formatting texts for those "<< Start < Previous 1 Next > End >>" links */
+.pagenav {
+	font-weight: bold;
+	color      : #34659d;
+	
+} 
+.small {}
+
+.back_button {
+  float: right;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  border: 1px double #cccccc;
+  width: auto;
+  padding: 0px 10px;
+  line-height: 20px;
+  margin: 1px;
+}
+
+/* ###################### LINKS ###################### */
+a:link, a:visited {
+  font-size        : 11px;
+  color            : #34659d;
+  text-decoration  : none;
+  font-weight: bold;
+  font-family      : Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+  text-decoration  : underline;
+}
+
+a.category:link, a.category:visited {
+  color            : #34659d;
+  font-weight      : bold;
+  letter-spacing   : 1px;
+}
+
+a.category:hover {
+  color            : #CC6600;
+}
+/* ############## PATHWAY AND BOTTOM BUTTON BAR ############## */
+.pathway {
+  color            : #F0F0F0;
+}
+
+a.pathway:link, a.pathway:visited {
+  color            : #8CA0B4;
+  font-weight      : normal;
+}
+
+a.pathway:hover {
+  color            : #F0F0F0;
+  font-weight      : normal;
+}
+/* ################### MAIN AND SUB MENU SYSTEM ################### 
+* You can control the way menu behave and look
+* by using the CSS settings below
+*/
+#mainlevel-nav {
+margin: 0; padding: 0;
+}
+#mainlevel-nav li {}
+#mainlevel-nav a {
+float: left;
+font-size: 11px;
+line-height: 12px;
+padding-bottom: 1px;
+text-decoration: none;
+font-weight	: bold;
+width: auto;
+color: #666666;
+border-bottom: 2px solid #DFDFDF;
+}
+#mainlevel-nav a:hover {
+width				: auto;
+color				: #2F6FBF;
+border-bottom		: 2px solid #2F6FBF;
+text-decoration		: none;
+}
+.mainlevel {
+  padding          : 0px 0px 0px 0px;
+  margin           : 0px 0px 0px 0px;
+}
+
+a.mainlevel:link, a.mainlevel:visited {
+	display: block;
+	background: url(../images/menu_bg.gif) no-repeat;
+	vertical-align: middle;
+	font-size: 11px;
+	font-weight: bold;
+	color: #3E3E3E;
+	text-align: left;
+	padding-top: 2px;
+	padding-left: 18px;
+	height: 20px !important;
+	height: 25px;
+	width: 100%;
+	text-decoration: none;
+
+}
+
+a.mainlevel:hover {
+	background: url(../images/menuhover_bg.gif) no-repeat;
+	text-decoration: none;
+	color: #2F6FBF;
+}
+
+.sublevel {
+  padding-top      : 2px;
+  padding-bottom   : 2px;
+  letter-spacing   : 2px;
+  width            : 167px;
+}
+
+a.sublevel:link, a.sublevel:visited {
+	padding-left: 1px;
+	vertical-align: middle;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ff6600;
+	text-align: left;
+}
+
+a.sublevel:hover {
+	color: #ffcc00;
+	text-decoration: none;
+}
+/* ###################### SECTION LISTING SETTINGS ###################### */
+/* This is for styling the section table headers on a SECTION's page.
+	An example would be those articles lists when you click on "News" or something?
+	With a table header of "Date", "Item Title", "Author" and "Hits" ? That's the
+	header that you will be controlling through this style */
+
+/*** Mambo Sections Styles - Styling of sections tables */
+.sectiontableheader {
+  background-color : #34659d;
+  color            : #FFFFFF;
+  padding: 4px 10px 4px 4px;
+  font-weight      : bold;
+  letter-spacing   : 0px;
+  
+}
+/* this is used when there's a whole list of data to provide and
+	you need to create alternate colors for each row of data. This is
+	the first color */ 
+.sectiontableentry1 {
+  line-height: 18px;
+  height: 20px;
+  background-color : #FFFFFF;
+}
+
+/* this is the second color for the row. So, the table generator,
+	will alternate its style through sectionableentry1 and sectiontableentry2
+	as it cycles through and outputs each row of data. Similar to forum's post
+	listings */
+.sectiontableentry2 {
+  line-height: 18px;
+  height: 20px;
+  background-color : #f9f9f9;
+}
+/**
+* Mambo Styles for Categories
+* ---------------------------
+* The following are the styling for "Category" items
+* generated from the Sections area
+*/
+.category {} /* this is to set the category Titles ( found on a SECTION's page
+	where the Category lists are) styles */
+a.category:link, a.category:visited {} /* same as above, but to set the link format */
+a.category:hover {} /* same as above, but for links with mouse pointer over it */
+ 
+/**
+* Mambo Blog styling
+* ------------------
+* Not too sure where this is used yet. I tried the blog section
+* but it doesn't seem to use it. If you have info on this,
+* email me. I'll update this part.
+*/
+ 
+.blogsection{} /* to be updated */
+ 
+ 
+/**
+* Mambo Components Styles
+* -----------------------
+* These stylings are to format the way components title
+* is displayed
+*/
+ 
+.componentheading {} /* This is used for formatting the component's title
+	when it is displayed on its own page on the frontend */
+ 
+/**
+* Mambo Modules formatting
+* ------------------------
+* These stylings are to format the way modules are
+* displayed. It mainly deals with the format of its
+* table. I think this doesn't need too much explaining
+*/
+/* styling the module table */
+table.moduletable {
+	width: 100%;
+	margin-bottom: 0px;
+	padding: 0px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	width: 202px;
+}
+/* styling the module header, and the module titles */
+table.moduletable th {
+	background: url(../images/subhead_bg.gif) repeat-x;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 11px;
+	padding-left: 4px;
+	height: 33px;
+	font-weight: bold;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+/* well.. for formatting the table cells of the module table */
+table.moduletable td {
+	font-size: 11px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin: 0px;
+	font-weight: normal;
+	background: url(../images/leftmodule_td_bg.jpg) repeat;
+}
+/**
+* Mambo's Built-in Component's Syling
+* -----------------------------------
+* These stylings are used for Mambo's built-in components
+* such as newsfeeds, weblinks, contact, search and polls.
+* A commented subtitle will guide you which is for which
+*/
+ 
+ 
+/* Polls */
+ 
+.poll {} /* polls texts */
+.pollstableborder {} /* set the border properties of the polls voting table */
+ 
+/* Weblinks */
+.weblinks{} /* well.. to format the link's titles under the "Weblinks" 
+	section on the frontend */
+a.weblinks:hover {} /* same as above, but for link with mouseover */
+ 
+/* Newsfeeds */
+.newsfeedheading {} /* The newsfeed title. NOTE: This will not affect the newsfeed's news title! */
+.newsfeeddate {} /* yeah.. the date on the newsfeed */
+.fase4rdf {} /* this is the body text of the newsfeed */
+ 
+/* Search page */
+table.searchintro {} /* This is for formatting the box with "Search Keyword: test returned 4 matches" box
+	that appears after you have entered a search value. It appears on the mainbody
+	with the search results */
+ 
+/* Contact's table settings */
+table.contact {} /* for formatting the entire "Contact" table which includes
+	the name, address icons and form. Note this table DOES NOT 
+	enclose the dropdown list for selecting the Department/person
+	to contact */
+table.contact td.icons {} /* the name gave it away. This formats the <td> cells
+	where the little icons sits next to the details (those addresses,
+	phone number etc) */
+table.contact td.details {} /* this is for formatting the <td> cells where all the details sits.
+	The details where addresses, phone number and additional info are */
+
+/**
+* ########## MAMBO GENERAL STYLING FOR SECTIONS/CATEGORIES/CONTENTS ###########
+* ------------------------------------------------------
+* These stylings are either sometimes or often used across
+* Sections, categories and contents. They, therefore, deserves
+* to be mentioned and separated from others.
+*/
+ /* For styling the date the content/articles are created under contents title */
+.createdate {
+  font-family      : Arial, Helvetica, sans-serif;
+  font-size        : 10px;
+  color            : #999999;
+  text-align       : left;
+}
+ /* styling the "Last updated on" text at the end of articles/contents */
+.modifydate {}
+/* For formatting the "Read on..." link for blogs and on frontpage. */
+.readon{
+display:block;
+width: 100px;
+padding-left: 17px;
+background: url(../images/readon.gif) no-repeat;
+} 
+.readon:hover{
+display:block;
+padding-left: 17px;
+background: url(../images/readon_over.gif) no-repeat;
+} 
+
+/**
+* ############## MAMBO FORM STYLES ##############
+* -----------------
+* Here are 2 styles that Mambo uses to let users control
+* how their forms and buttons may look.
+*/
+.button {
+  font-family      : Arial, Helvetica, sans-serif;
+  font-style       : normal;
+  font-size        : 12px;
+  color            : #000000;
+  border           : 1px solid;
+}
+
+.inputbox {
+  font-family      : Arial, Helvetica, sans-serif;
+  font-size        : 12px;
+  color            : #000000;
+  background       : #FFFFFF;
+  border           : 1px solid;
+}
+
+ 
+/**
+* Mambo Tabbed Frontend Admin Interface
+* -------------------------------------
+* The CSS styles here defines how the frontend admin interface
+* will look like when editing and adding news through frontend.
+*/
+ 
+.ontab {}/* For styling of the "Tab" buttons when editing contents through the frontend as admin. 
+This .ontab is the styling for the tab when it is active or after its "clicked" */
+.offtab {} /* Same as above, used for styling of the "Tab" buttons when editing contents through the frontend. 
+This the styling for the tab when it is NOT active or when it is NOT "clicked" */
+.tabpadding {} /* this style is used set the size of the tab in the above */ 
+.tabheading {} /* Not too sure what this is used for. Couldn't find anything related to it yet at the moment */
+.pagetext {} /* this style is used to style the content of the editing form contents (where HTMLArea sits and all its forms + contents) in
+the frontend Administration interface */
+ 
+/** 
+* ##############  MAMBO STYLING FOR CONTENTS  ###############
+* --------------------------
+* All the styling for contents are listed below.
+*/
+/* This is used mainly for the table that holds the SECTIONS such as News.
+	This is when you create a link to a Section and when clicked on it, it will display
+	"News" then some description (with image if you selected one) and then a list of 
+	Category of News. Yes! That entire thing is contained in a table with this style */
+.contentpane {
+  width: 100%;
+  text-align       : justify;
+  padding-left     : 5px;
+  padding-right    : 5px;
+}
+/* Found this being used by Phil in his Shambo2. Don't know where else its used
+in Mambo */
+.contentpaneopen {
+  width			   : 100%;
+  text-align       : justify;
+  padding-left     : 0px;
+  padding-right    : 0px;
+}
+/* This is used in several places; the Heading of contents on the frontpage,
+	it is also used for Section's heading (see above for explanation) "News" or
+	whatever heading you used */
+.contentheading, .componentheading {
+	height: 24px;
+	background: url(../images/contenthead.gif) no-repeat;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 11px;
+	color: #2F6FBF;
+	text-transform: UPPERCASE;
+}
+/* Couldn't find where is this yet. Will update this part when I
+get to it. Sorry. If you know, please email me the infos */
+.contentpagetitle {} 
+/* When you create a link to a Section in the main menu and when clicked on it, it will display
+	"News" then some description (with image if you selected one) and then a list of 
+	Category of News. This style is used for formating the "DESCRIPTION" part of that page */
+.contentdescription {}
+/* This is used to format the table of the Tables of Contents or "Jump to" 
+	box when it is enabled in a multiple paged content or article */
+table.contenttoc {}
+/* the same as above, but this is used to format the td or
+	table cells */
+table.contenttoc td {}
+ /* used for styling the texts used for displaying 
+	those "stars" for rating in an article */
+.content_rating {}
+/* used for those voting texts (the one with voting RADIO buttons) */
+.content_vote {} 
+
+/*##############  TEMPLATE CUSTOMED STYLING ###############*/
+#out_table {
+ 	margin-top:0px;
+	margin-left: 0px;
+	vertical-align:top;
+	padding: 0px 0px 0px 0px;
+	border: 1px solid #CCCCCC;
+	height:auto
+	
+}
+#out_table td {
+	vertical-align:top;
+}
+#main_area {
+ 	margin-top:0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	vertical-align:top;
+	padding: 0px 0px 0px 0px;
+	vertical-align:top;
+	height:auto;
+	width: 548px;
+	background-color:#FFFFFF;
+}
+.mainbody{
+	padding: 3px 2px 3px 2px;
+}
+#top_module{
+background: url(../images/top_module_bg.jpg) no-repeat;
+padding-top: 35px;
+padding-left: 5px;
+padding-right:10pt;
+color            : #FFFFFF;
+
+}
+#left_module{
+background: url(../images/left_menu_bg.jpg) repeat-y;
+border-right: 2px solid #CCCCCC;
+}
+#footer {
+padding-left:5px;
+padding-right:5px;
+padding-top: 20px;
+color: #4c525a;
+text-align: center;
+
+}
+.user1{
+background: url(../images/user1_bg.jpg) no-repeat;
+padding-top: 35px;
+padding-left: 5px;
+
+}
+.user2{
+background: url(../images/user2_bg.jpg) no-repeat;
+padding-top: 35px;
+padding-left: 5px;
+}

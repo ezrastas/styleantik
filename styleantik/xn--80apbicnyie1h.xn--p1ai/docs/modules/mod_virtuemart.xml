@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module">
+    <name>Главный модуль RusVirtueMart</name>
+    <creationDate>20.10.2005</creationDate>
+    <author>Соерен Эберхард, перевод команда Rusvirtuemart </author>
+    <copyright>RusVirtueMart выпускается под GNU/GPLicense</copyright>
+    <authorEmail>admin@virtuemart.ru</authorEmail>
+    <authorUrl>http://www.virtuemart.ru</authorUrl>
+    <version>1.0</version>
+    <description>Показывает категории RusVirtueMart, корзину, поле для поиска по товарам,
+               ссылку на вход администратора, ссылку для регистрации и ссылку для скачивания страницы. Требуется для всех остальных модулей.</description>
+    <files>
+         <filename module="mod_virtuemart">mod_virtuemart.php</filename>
+         <filename>vm_dtree.php</filename>
+         <filename>vm_JSCook.php</filename>
+         <filename>vm_transmenu.php</filename>
+        <filename>dtree/dtree.css</filename> 
+        <filename>dtree/dtree.js</filename> 
+        <filename>dtree/img/base.gif</filename> 
+        <filename>dtree/img/cd.gif</filename> 
+        <filename>dtree/img/empty.gif</filename> 
+        <filename>dtree/img/folder.gif</filename> 
+        <filename>dtree/img/folderopen.gif</filename> 
+        <filename>dtree/img/globe.gif</filename> 
+        <filename>dtree/img/imgfolder.gif</filename> 
+        <filename>dtree/img/join.gif</filename> 
+        <filename>dtree/img/joinbottom.gif</filename> 
+        <filename>dtree/img/line.gif</filename> 
+        <filename>dtree/img/minus.gif</filename> 
+        <filename>dtree/img/minusbottom.gif</filename> 
+        <filename>dtree/img/musicfolder.gif</filename> 
+        <filename>dtree/img/nolines_minus.gif</filename> 
+        <filename>dtree/img/nolines_plus.gif</filename> 
+        <filename>dtree/img/page.gif</filename> 
+        <filename>dtree/img/plus.gif</filename> 
+        <filename>dtree/img/plusbottom.gif</filename> 
+        <filename>dtree/img/question.gif</filename> 
+        <filename>dtree/img/trash.gif</filename> 
+        <filename>vm_transmenu/Shop_Menu.php</filename> 
+        <filename>vm_transmenu/transmenuh.css</filename> 
+        <filename>vm_transmenu/transmenu.js</filename> 
+        <filename>vm_transmenu/transmenu.php</filename> 
+        <filename>vm_transmenu/transmenuv.css</filename> 
+        <filename>vm_transmenu/img/arrow.gif</filename> 
+        <filename>vm_transmenu/img/arrow.png</filename> 
+        <filename>vm_transmenu/img/grey-40.png</filename> 
+        <filename>vm_transmenu/img/tabarrow.gif</filename> 
+        <filename>vm_transmenu/img/tabarrow.png</filename> 
+        <filename>vm_transmenu/img/white-90.png</filename> 
+        <filename>vm_transmenu/img/x.gif</filename> 
+    </files>
+    <params>    <param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS для модуля" description="Суффикс добавляется к названию класса css модуля (table.moduletable), это позволяет задавать стиль только для этого модуля" />
+    <param name="class_sfx" type="text" default="" label="Суффикс класса CSS для меню" description="Суффикс позволяет задать стиль только для этого меню" />
+       <param name="pretext" type="text" default="" label="Текст до" description="Этот текст или HTML будет отображается перед прокруткой." />
+        <param name="show_login_form" type="radio" default="no" label="Показывать форму авторизации для покупателей?"
+      description="Задает будет ли показана форма авторизации или нет." >
+        <option value="yes">Да</option>
+        <option value="no">Нет</option>
+      </param>
+      <param name="show_categories" type="radio" default="yes" label="Показывать категории товаров?"
+      description="Описывает будут ли показан категории товаров или нет ." >
+        <option value="yes">Да</option>
+        <option value="no">Нет</option>
+      </param>
+      <param name="show_listall" type="radio" default="yes" label="Показывать ссылкун на просмотр всего списка товаров?"
+      description="Задает будет ли показана ссылка на просмотр всего списка товаров или нет." >
+        <option value="yes">Да</option>
+        <option value="no">Нет</option>
+      </param>
+      
+      <param name="show_minicart" type="radio" default="yes" label="Показывать Корзину?"
+      description="Задает будет ли показана миникорзина с ссылкой на корзину, а также общая стоимость  товаров в корзине." >
+        <option value="yes">Да</option>
+        <option value="no">Нет</option>
+      </param>
+      
+      <param name="show_productsearch" type="radio" default="yes" label="Показывать поле поиска по товарам?"
+      description="Показывает или скрывает поле поиска по товарам.">
+        <option value="yes">Да</option>
+        <option value="no">Нет</option>
+      </param>
+      
+      <param name="show_product_parameter_search" type="radio" default="no" label="Показывать ссылку на поиск по характеристикам?"
+      description="Показывать форму поиска по характеристикам .">
+        <option value="yes">Да</option>
+        <option value="no">Нет</option>
+      </param>
+      
+   <param name="menutype" type="list" default="jscook" label="Вид отображения категории"
+      description="Вы можете выставить в вид *Список ссылок*,  *Дерево(dTree)*, тогда структура категорий будут отображены в виде дерева. Также может быть JsCook и Трансменю это яваскриптовые менюхи. Ознакомьтесь с ними практическим путем.">
+        <option value="links">Список ссылок</option>
+        <option value="dtree">Дерево dTree</option>
+        <option value="jscook">JSCook</option>
+        <option value="transmenu">TransMenu</option>
+      </param>
+       <param name="jscook_type" type="list" default="menu" label="тип JSCook" description="Стиль для отображения категорий:Меню или Дерево">
+          <option value="menu">Меню</option>
+          <option value="tree">Дерево</option>
+      </param>
+     <param name="jscookMenu_style" type="text" default="ThemeOffice" label=" Стиль JSCook меню" description="Стиль для JSCookMenu. Заполняется если вы выбрали стиль отображения  *JSCook* и *Меню*  в предыдущих параметрах" />
+      <param name="menu_orientation" type="list" default="hbr" label="Ориентация  JSCook меню" description="Если вы выбрали *JSCook* и *Меню* в предыдущих параметрах: Может быть горизонтальным или вертикальным!">
+          <option value="hbr">Горизонтально</option>
+          <option value="vbr">Вертикально</option>
+      </param>
+      <param name="jscookTree_style" type="text" default="ThemeXP" label="Стиль *JSCook* дерева" description="Стиль для дерева JSCook. Заполняется если вы выбрали стиль отображения *JSCook* и *Дерево* в предыдущих параметрах" />
+      <param name="root_label" type="text" default="Магазин" label="Корневой узел дерева (dTree)" description="Все что вы здесь введете будет отображено в корневом узле дерева." />
+    </params>
+</mosinstall>

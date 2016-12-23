@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="mambot" group="search">
+	<name>RusVirtuemart поисковый плагин</name>
+	<author>Соерен Эберхард, перевод команда Rusvirtuemart </author>
+    <copyright>RusVirtueMart выпускается под GNU/GPLicense</copyright>
+    <authorEmail>admin@virtuemart.ru</authorEmail>
+    <authorUrl>http://www.virtuemart.ru</authorUrl>
+	<version>1.0.6</version>
+	<description>Производит поиск по товарам </description>
+	<files>
+		<filename mambot="virtuemart.searchbot">virtuemart.searchbot.php</filename>
+	</files>
+</mosinstall>

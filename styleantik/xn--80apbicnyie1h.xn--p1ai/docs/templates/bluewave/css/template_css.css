@@ -1,0 +1,64 @@
+BODY { font: 11px geneva, verdana, arial, sans-serif; color: #3D3D3D; }
+TH{ font: 11px geneva, verdana, arial, sans-serif; color: #3D3D3D; }
+A:active { font: 11px geneva, verdana, arial, sans-serif; color: #000080; text-decoration: none; }
+A:hover { font: 11px geneva, verdana, arial, sans-serif; color: #4F0000; text-decoration: underline; }
+A:link { font: 11px geneva, verdana, arial, sans-serif; color: #000080; text-decoration: none;  } 
+A:visited { font: 11px geneva, verdana, arial, sans-serif; color: #000080; text-decoration: none;  } 
+
+select, input, textarea { font: 10px geneva, verdana, arial, sans-serif; color: #3D3D3D; }
+
+.pn-title 	{BACKGROUND: none; COLOR: #363636; FONT-SIZE: 11px; FONT-WEIGHT: bold; FONT-FAMILY: geneva, verdana, arial, sans-serif;TEXT-DECORATION: none}
+.pn-title:link { color:#000080; FONT-SIZE: 11px; FONT-WEIGHT: bold; FONT-FAMILY: geneva, verdana, arial, sans-serif;TEXT-DECORATION: none}
+.pn-title:active { color:#000080; FONT-SIZE: 11px;FONT-WEIGHT: bold;  FONT-FAMILY: geneva, verdana, arial, sans-serif;TEXT-DECORATION: none}
+.pn-title:hover { color:#4F0000; FONT-SIZE: 11px; FONT-WEIGHT: bold; FONT-FAMILY: geneva, verdana, arial, sans-serif;TEXT-DECORATION: underline}
+.pn-title:visited { color:#000080; FONT-SIZE: 11px; FONT-WEIGHT: bold; FONT-FAMILY: geneva, verdana, arial, sans-serif;TEXT-DECORATION: none}
+
+.pn-normal	{BACKGROUND: none; COLOR: #363636; FONT-SIZE: 11px; FONT-WEIGHT: normal; FONT-FAMILY: geneva, verdana, arial, sans-serif;TEXT-DECORATION: none}
+.pn-normal:link { color:#000080; FONT-SIZE: 11px; FONT-FAMILY: geneva, verdana, arial, sans-serif;TEXT-DECORATION: none}
+.pn-normal:active { color:#000080; FONT-SIZE: 11px; FONT-FAMILY: geneva, verdana, arial, sans-serif;TEXT-DECORATION: none}
+.pn-normal:hover { color:#4F0000; FONT-SIZE: 11px; FONT-FAMILY: geneva, verdana, arial, sans-serif;TEXT-DECORATION: underline}
+.pn-normal:visited { color:#000080; FONT-SIZE: 11px; FONT-FAMILY: geneva, verdana, arial, sans-serif;TEXT-DECORATION: none}
+
+.date   {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: bold; FONT-FAMILY: geneva, verdana, arial, sans-serif; TEXT-DECORATION: none}
+
+body {
+SCROLLBAR-FACE-COLOR: #B7C6E5; SCROLLBAR-HIGHLIGHT-COLOR: #D3DCEF; SCROLLBAR-SHADOW-COLOR: #738FCC; SCROLLBAR-3DLIGHT-COLOR: #E9EEF8; SCROLLBAR-ARROW-COLOR: #000000; SCROLLBAR-TRACK-COLOR: #E5EBF4; SCROLLBAR-DARKSHADOW-COLOR: #4870AA; 
+}
+FONT  { font: 11px geneva, verdana, arial, sans-serif; color: #3D3D3D;  } 
+TD { font: 11px geneva, verdana, arial, sans-serif; color: #3D3D3D;  ; top: 20pt; clip:   rect(   )} 
+
+
+.BOD { font: 11px geneva, verdana, arial, sans-serif; color: #3D3D3D;  } 
+
+
+.slogan { <!-- /* $WEFT -- Created by: Absalom Media (staff@absalom.biz) on 2/12/2003 -- */
+  {
+    font-family: Lucida Handwriting;
+    font-style:  bold;
+    font-size:36px;
+    src: url(templates\bluewave\css\LUCIDAH0.eot);
+  }
+-->
+table.moduletable {
+  margin: 0px 0px 0px 2px;
+  text-align: left;
+  width: 100%;
+}
+
+table.moduletable th {
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold; 
+	text-align: left;
+	height: 18px;
+	line-height: 18px;
+	white-space: nowrap;
+}
+
+table.moduletable td {
+  font-size: 10px;
+  font-weight: normal;
+  padding:			1px;
+}
+
+

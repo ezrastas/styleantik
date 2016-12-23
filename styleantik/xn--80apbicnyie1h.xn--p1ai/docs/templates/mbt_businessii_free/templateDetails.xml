@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1"?> <mosinstall type="template" version="4.5.1">
+<name>mbt businessii free</name> <creationDate>24.04.05</creationDate> <author>Mambotheme.com</author> <copyright>You must keep designed by MamboTheme.com when using this template. Join the MBT Membership Club to remove!
+</copyright> <authorEmail>webmaster@mambotheme.com</authorEmail> <authorUrl>www.mambotheme.com</authorUrl> 
+<version>1.0</version> <description> mbt businessii (free and club version ) contain:
++ 2 company Flash logos 
++ 7 image headers/ flash headers/ (club version)
++ Top images menu with mouseover effect (free version)
++ Top flash menu (club version)
++ 2 menu style packages 
++ 2 readon style packages. See demo of Club version at http://demo.mambotheme.com/index.php?mos_change_template=mbt_businessii. See demo of Free version at http://demo.mambotheme.com/index.php?mos_change_template=mbt_businessii_free </description> 
+<files> 
+<filename>index.php</filename> 
+<filename>template_thumbnail.png</filename>
+</files> 
+	<images>
+<filename>images/arrow.png</filename>
+<filename>images/arrow2.jpg</filename>
+<filename>images/asterisk.png</filename>
+<filename>images/bg.jpg</filename>
+<filename>images/contenthead.gif</filename>
+<filename>images/footer_bg.jpg</filename>
+<filename>images/help.gif</filename>
+<filename>images/indent1.png</filename>
+<filename>images/indent2.png</filename>
+<filename>images/indent3.png</filename>
+<filename>images/indent4.png</filename>
+<filename>images/left_menu_bg.jpg</filename>
+<filename>images/leftmodule_td_bg.jpg</filename>
+<filename>images/line2_bg.jpg</filename>
+<filename>images/line_bg.jpg</filename>
+<filename>images/menu_bg.gif</filename>
+<filename>images/menuhover_bg.gif</filename>
+<filename>images/readon.gif</filename>
+<filename>images/readon_over.gif</filename>
+<filename>images/search.jpg</filename>
+<filename>images/search_bg.jpg</filename>
+<filename>images/sitemap.gif</filename>
+<filename>images/spacer.gif</filename>
+<filename>images/subhead_bg.gif</filename>
+<filename>images/top_module_bg.jpg</filename>
+<filename>images/topmenu_01.gif</filename>
+<filename>images/topmenu_02.gif</filename>
+<filename>images/topmenu_04.gif</filename>
+<filename>images/topmenu_06.gif</filename>
+<filename>images/topmenu_08.gif</filename>
+<filename>images/topmenu_10.gif</filename>
+<filename>images/topmenu_12.gif</filename>
+<filename>images/topmenu_13.gif</filename>
+<filename>images/topmenu_16.gif</filename>
+<filename>images/topmenu_contact.gif</filename>
+<filename>images/topmenu_home.gif</filename>
+<filename>images/topmenu_joinnow.gif</filename>
+<filename>images/topmenu_mbtclub.gif</filename>
+<filename>images/topmenu_template.gif</filename>
+<filename>images/topmenu_contact-over.gif</filename>
+<filename>images/topmenu_home-over.gif</filename>
+<filename>images/topmenu_joinnow-over.gif</filename>
+<filename>images/topmenu_mbtclub-over.gif</filename>
+<filename>images/topmenu_template-over.gif</filename>
+<filename>images/user1_bg.jpg</filename>
+<filename>images/user2_bg.jpg</filename>
+<filename>images/white_bg2.jpg</filename>
+<filename>images/white_bg.jpg</filename>
+<filename>images/overview.gif</filename>
+<filename>images/rotate_logos/8.jpg</filename>
+<filename>images/rotate_logos/9.jpg</filename>
+<filename>images/flash/company_slogan1.swf</filename> 
+	</images>
+<css>
+<filename>css/template_css.css</filename> 
+</css>
+</mosinstall>

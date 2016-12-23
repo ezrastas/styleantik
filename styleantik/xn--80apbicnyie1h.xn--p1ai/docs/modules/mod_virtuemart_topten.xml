@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module">
+    <name>RusVirtueMart Десять лучших товаров</name>
+    <creationDate>15.11.2005</creationDate>
+     <author>Соерен Эберхард, перевод команда Rusvirtuemart </author>
+    <copyright>RusVirtueMart выпускается под GNU/GPLicense</copyright>
+    <authorEmail>admin@virtuemart.ru</authorEmail>
+    <authorUrl>http://www.virtuemart.ru</authorUrl>
+    <version>1.1</version>
+    <description>Показывает десять лучших по продажам товаров.</description>
+     <files>
+         <filename module="mod_virtuemart_topten">mod_virtuemart_topten.php</filename>
+     </files>
+     <params>
+        <param name="num_topsellers" type="text" default="10" label="Количество товаров для отображаения" description="Задает количество товаров, которое будет показано в модуле." />
+    <param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS для модуля" description="Суффикс добавляется к названию класса css модуля (table.moduletable), это позволяет задавать стиль только для этого модуля" />
+    <param name="class_sfx" type="text" default="" label="Суффикс класса CSS для меню" description="Суффикс позволяет задать стиль только для этого меню" />  </params>
+</mosinstall>

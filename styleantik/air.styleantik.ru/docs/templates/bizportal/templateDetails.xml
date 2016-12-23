@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template">
+<name>bizportal</name>
+<creationDate>14/06/2007</creationDate>
+<author>~raduga~</author>
+<copyright>(c)raduga 2007 </copyright>
+<authorEmail>rsvet@yandex.ru</authorEmail>
+<authorUrl>http://mambasana.ru</authorUrl>
+<version>r1</version>
+<description>Bizportal supports 6 module positions: top, bottom, left, user1, user2, user3. 
+</description>
+<files>
+<filename>index.php</filename>
+<filename>index.html</filename>
+<filename>template_thumbnail.png</filename>
+<filename>favicon.ico</filename>
+</files>
+<images>
+<filename>images/footer.gif</filename>
+<filename>images/man.gif</filename>
+<filename>images/logo.gif</filename>
+<filename>images/separator.gif</filename>
+<filename>images/arrow.png</filename>
+<filename>images/shadow.gif</filename>
+<filename>images/corner.gif</filename>
+<filename>images/indent1.png</filename>
+<filename>images/indent2.png</filename>
+<filename>images/indent3.png</filename>
+<filename>images/mod_left.jpg</filename>
+<filename>images/light.jpg</filename>
+<filename>images/corner_content.gif</filename>
+<filename>images/city.jpg</filename>
+<filename>images/menu.gif</filename>
+</images>
+<css>
+<filename>css/template_css.css</filename>
+</css>
+</mosinstall>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Разделы</name>
+	<author>Joomla! Project</author>
+	<creationDate>Июль 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0 RE</version>
+	<description>Модуль "Разделы" отображает список всех разделов из базы данных. Разделы связаны только с объектами Разделов. Если выбрано 'Показывать ссылки неавторизованным', то пользователям будет виден только список разрешенных для просмотра разделов.</description>
+	<files>
+	<filename module="mod_sections">mod_sections.php</filename>
+	</files>
+	<params>
+		<param name="count" type="text" default="5" label="Число объектов" description="Количество отображаемых объектов (по умолчанию - 5)" />
+		<param name="moduleclass_sfx" type="text" default="" label="CSS-cуффикс класса модуля" description="Суффикс, который будет использован в описании класса (table.moduletable) таблицы стилей (CSS) модуля. Это позволяет использовать индивидуальный стиль модуля." />
+	</params>
+</mosinstall>

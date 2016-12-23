@@ -1,0 +1,604 @@
+/* camera.less
+=========================================================*/
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@-webkit-keyframes h-progress {
+  0% {
+    width: 0;
+  }
+}
+@-moz-keyframes h-progress {
+  0% {
+    width: 0;
+  }
+}
+@-ms-keyframes h-progress {
+  0% {
+    width: 0;
+  }
+}
+@-o-keyframes h-progress {
+  0% {
+    width: 0;
+  }
+}
+@keyframes h-progress {
+  0% {
+    width: 0;
+  }
+}
+@-webkit-keyframes v-progress {
+  0% {
+    height: 0;
+  }
+}
+@-moz-keyframes v-progress {
+  0% {
+    height: 0;
+  }
+}
+@-ms-keyframes v-progress {
+  0% {
+    height: 0;
+  }
+}
+@-o-keyframes v-progress {
+  0% {
+    height: 0;
+  }
+}
+@keyframes v-progress {
+  0% {
+    height: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 679px) {
+  .camera_prev,
+  .camera_next,
+  .camera_commands {
+    top: 50%;
+  }
+}
+.camera_caption > div {
+  color: #c2a26f;
+}
+.camera_pag .camera_pag_ul li {
+  background: #c2a26f;
+}
+/* caroufredsel.less
+=========================================================*/
+.caroufredsel_prev,
+.caroufredsel_next {
+  background: #c2a26f;
+}
+/* layout.less
+=========================================================*/
+/* template.less
+=========================================================*/
+.moduletable.counters .item_title {
+  color: #c2a26f;
+}
+.moduletable.counters .item_introtext {
+  color: #c2a26f;
+}
+.moduletable.store-events .item_content i {
+  border: 2px solid #c2a26f;
+  color: #c2a26f;
+}
+.moduletable.social-list .social a:before {
+  background: #c2a26f;
+}
+.moduletable.social-list .social a:hover:before {
+  background: #c2a26f;
+}
+.moduletable.testimonials .item_content:before {
+  color: #c2a26f;
+}
+.moduletable.testimonials .item_title {
+  color: #c2a26f;
+}
+.item_info_dl dd a:hover {
+  color: #c2a26f;
+}
+.item_info_dl dd i {
+  color: #c2a26f;
+}
+#mainbottom {
+  background-color: #bf9d68;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c2a26f), color-stop(50%, #c2a26f), to(#b28b4c));
+  background-image: -webkit-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -moz-linear-gradient(top, #c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -o-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-repeat: no-repeat;
+}
+#footer .mod-menu a:hover {
+  color: #c2a26f;
+}
+#footer .mod-menu .active a {
+  color: #c2a26f;
+}
+#footer .sociallist li a:hover.fa:before {
+  background: #c2a26f;
+}
+#footer .contacts span a {
+  color: #c2a26f;
+}
+#login-form .control-group.login .controls .btn {
+  margin-left: 3px;
+}
+#myModal .modal-dialog .btndontshow:hover {
+  color: #c2a26f;
+}
+div.moduletable.bannertop .bannergroup.bannertop .banneritem .banner_text {
+  border-top: 1px solid #c2a26f;
+  background: rgba(194, 162, 111, 0.9);
+}
+a {
+  color: #c2a26f;
+}
+a {
+  color: #c2a26f;
+}
+b {
+  color: #c2a26f;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-tab li {
+  color: #c2a26f;
+}
+blockquote {
+  color: #c2a26f;
+}
+blockquote:before {
+  color: #c2a26f;
+}
+.item_introtext strong,
+.item_fulltext strong,
+.category_desc strong {
+  color: #c2a26f;
+}
+.item_introtext mark,
+.item_fulltext mark,
+.category_desc mark {
+  background: #c2a26f;
+}
+ol li a {
+  color: #c2a26f;
+}
+ol li a:hover {
+  color: #c2a26f;
+}
+.item_introtext ul li:before,
+.item_fulltext ul li:before,
+.category_desc ul li:before,
+.site_map ul li:before {
+  color: #c2a26f;
+}
+.item_introtext ul a,
+.item_fulltext ul a,
+.category_desc ul a,
+.site_map ul a,
+.item_introtext ul span,
+.item_fulltext ul span,
+.category_desc ul span,
+.site_map ul span {
+  color: #c2a26f;
+}
+.item_introtext ul a:hover,
+.item_fulltext ul a:hover,
+.category_desc ul a:hover,
+.site_map ul a:hover,
+.item_introtext ul span:hover,
+.item_fulltext ul span:hover,
+.category_desc ul span:hover,
+.site_map ul span:hover {
+  color: #c2a26f;
+}
+.portfolio-meta-list li strong {
+  color: #c2a26f;
+}
+.chzn-container .chzn-results li.highlighted {
+  background: #c2a26f;
+}
+.chzn-container-single .chzn-single div {
+  background: #c2a26f;
+}
+.chzn-container-single.chzn-container-active.chzn-with-drop .chzn-single div {
+  background: #c2a26f;
+}
+span.checkbox label.checkbox_inner:before {
+  color: #c2a26f;
+}
+span.radio input[type="radio"]:checked + label.radio_inner:before {
+  background: #c2a26f;
+}
+.input-prepend .add-on i,
+.input-prepend .add-on > span {
+  color: #c2a26f;
+}
+.input-prepend .add-on:hover i {
+  background: #c2a26f;
+}
+/* Allow for input prepend/append in search forms */
+table th {
+  background: #c2a26f;
+}
+table a {
+  color: #c2a26f;
+}
+dl.table dt {
+  background: #c2a26f;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  background: #c2a26f;
+}
+.btn:before {
+  background-color: #bf9d68;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c2a26f), color-stop(50%, #c2a26f), to(#b28b4c));
+  background-image: -webkit-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -moz-linear-gradient(top, #c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -o-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-repeat: no-repeat;
+}
+.btn-info,
+.cancel,
+.cance-shop .btn {
+  background-color: #bf9d68;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c2a26f), color-stop(50%, #c2a26f), to(#b28b4c));
+  background-image: -webkit-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -moz-linear-gradient(top, #c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -o-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-repeat: no-repeat;
+}
+.btn-link {
+  color: #c2a26f;
+}
+.nav-tabs > li > a:after,
+.nav-tabs > li > span:after {
+  background: #c2a26f;
+}
+.nav-list > .active > a,
+.nav-list > .active > a:hover,
+.nav-list > .active > a:focus {
+  background-color: #c2a26f;
+}
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+  background-color: #c2a26f;
+}
+.nav .dropdown-toggle .caret {
+  border-top-color: #c2a26f;
+  border-bottom-color: #c2a26f;
+}
+.breadcrumb a {
+  color: #c2a26f;
+}
+.pagination ul li > a:focus,
+.pagination ul li > span:focus {
+  background: #c2a26f;
+}
+.pagination ul li > .pagenav,
+.pagination ul li > .hasTooltip {
+  background: #c2a26f;
+}
+a.thumbnail:hover,
+a.thumbnail:focus {
+  border-color: #c2a26f;
+}
+.label,
+.badge {
+  background: #c2a26f;
+}
+@-webkit-keyframes progress-bar-stripes {
+}
+@-moz-keyframes progress-bar-stripes {
+}
+@-ms-keyframes progress-bar-stripes {
+}
+@-o-keyframes progress-bar-stripes {
+}
+@keyframes progress-bar-stripes {
+}
+.progress-horizontal .bar {
+  background: #c2a26f;
+}
+.progress-vertical .bar {
+  background: #c2a26f;
+}
+.radial-progress svg path:last-child {
+  stroke: #c2a26f !important;
+}
+.radial-progress .progressbar-text {
+  color: #c2a26f !important;
+}
+.accordion-toggle:before {
+  background: #c2a26f;
+}
+@-ms-viewport {
+}
+/* Joomla => Bootstrap Tooltip */
+/* Common styling for Chosen Select Boxes with Input Prepend/Append */
+/* Accessible Hidden Elements (good for hidden labels and such) */
+/* Chosen proper wrapping in Bootstrap btn-group */
+/* Align tip text to left (old mootools tip) */
+.offline_container .well {
+  background: #c2a26f;
+}
+.mod-menu .nav.menu.nav-pills > li.active > a {
+  background: #c2a26f;
+}
+.icons .btn-group.pull-right ul.dropdown-menu > li > a:hover {
+  background: #c2a26f;
+}
+#back-top a {
+  border: 2px solid #c2a26f;
+  color: #c2a26f;
+}
+#back-top a:hover {
+  background: #c2a26f;
+}
+#habla_window_div #habla_topbar_div {
+  background: #c2a26f !important;
+}
+*::selection {
+  background: #c2a26f;
+}
+*::-moz-selection {
+  background: #c2a26f;
+}
+#section-kmt .kmt-head {
+  color: #c2a26f;
+}
+#section-kmt .kmt-head .author-kmt a:hover {
+  color: #c2a26f;
+}
+#section-kmt .kmt-inreplyto a:hover {
+  color: #c2a26f;
+}
+#section-kmt .kmt-time:before {
+  color: #c2a26f;
+}
+#section-kmt .kmt-time a:hover {
+  color: #c2a26f;
+}
+#section-kmt .kmt-control-user .kmt-btn {
+  background: #c2a26f;
+}
+#section-kmt .kmt-like-counter {
+  background: #c2a26f;
+}
+#section-kmt .kmt-like-counter:after {
+  border-left: 5px solid #c2a26f;
+}
+#section-kmt .kmt-rank-progress {
+  background: #c2a26f;
+}
+.icemegamenu > ul > li > a.iceMenuTitle {
+  background: #c2a26f;
+}
+.icemegamenu > ul > li.menu-login-form > a.iceMenuTitle {
+  color: #c2a26f;
+}
+ul.icesubMenu li.active > a.iceMenuTitle,
+ul.icesubMenu li:hover > a.iceMenuTitle,
+ul.icesubMenu li.hover > a.iceMenuTitle {
+  background: #c2a26f;
+}
+.contact_details .icons-marker {
+  border: 2px solid #c2a26f;
+  color: #c2a26f;
+}
+.login_shell {
+  background: #c2a26f;
+}
+div#fixed-sidebar-right .moduletable.login > i.fa-user {
+  background: #c2a26f;
+}
+div#fixed-sidebar-right .moduletable.login .mod_login_wrapper {
+  background: #c2a26f;
+}
+div#fixed-sidebar-right .moduletable.login .mod_login_wrapper .input-prepend .add-on:hover i {
+  color: #c2a26f;
+}
+#top-box div.topmenu ul li a:hover {
+  background: #c2a26f;
+}
+#top-box div.topmenu ul li.active a {
+  background: #c2a26f;
+}
+.module-currencies .heading {
+  color: #c2a26f;
+}
+.module-currencies .dropdown-menu ul li a:hover,
+.module-currencies .dropdown-menu ul li a.active {
+  color: #c2a26f;
+}
+.vmCartModule .total_products {
+  background-color: #bf9d68;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c2a26f), color-stop(50%, #c2a26f), to(#b28b4c));
+  background-image: -webkit-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -moz-linear-gradient(top, #c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -o-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-repeat: no-repeat;
+}
+.vmCartModule .total_products:hover .total_items {
+  background-color: #bf9d68;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c2a26f), color-stop(50%, #c2a26f), to(#b28b4c));
+  background-image: -webkit-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -moz-linear-gradient(top, #c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -o-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-repeat: no-repeat;
+}
+#aside-left .vmmanufacturerbrand li a:hover {
+  background-color: #bf9d68;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c2a26f), color-stop(50%, #c2a26f), to(#b28b4c));
+  background-image: -webkit-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -moz-linear-gradient(top, #c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -o-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-repeat: no-repeat;
+}
+.VMmenu dt.parent.current,
+.VMmenu dt.parent.opened {
+  background-color: #bf9d68;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c2a26f), color-stop(50%, #c2a26f), to(#b28b4c));
+  background-image: -webkit-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -moz-linear-gradient(top, #c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -o-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-repeat: no-repeat;
+}
+.VMmenu dt.opened,
+.VMmenu dt.current,
+.VMmenu dt:hover {
+  background-color: #bf9d68;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c2a26f), color-stop(50%, #c2a26f), to(#b28b4c));
+  background-image: -webkit-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -moz-linear-gradient(top, #c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -o-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-repeat: no-repeat;
+}
+.VMmenu > dd dt.current a,
+.VMmenu > dd dt:hover a,
+.VMmenu > dd dt.opened a {
+  color: #c2a26f;
+}
+.VMmenu > dd dt.current:before,
+.VMmenu > dd dt:hover:before,
+.VMmenu > dd dt.opened:before {
+  color: #c2a26f !important;
+}
+#com_virtuemart .grid-list div.active,
+.comvirtuemartmod .grid-list div.active,
+#com_virtuemart .grid-list div:hover,
+.comvirtuemartmod .grid-list div:hover {
+  color: #c2a26f;
+}
+#com_virtuemart .addtocart-area form .addtocart-button i,
+.comvirtuemartmod .addtocart-area form .addtocart-button i,
+#com_virtuemart .vm-details-button form .addtocart-button i,
+.comvirtuemartmod .vm-details-button form .addtocart-button i {
+  background-color: #bf9d68;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c2a26f), color-stop(50%, #c2a26f), to(#b28b4c));
+  background-image: -webkit-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -moz-linear-gradient(top, #c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: -o-linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-image: linear-gradient(#c2a26f, #c2a26f 50%, #b28b4c);
+  background-repeat: no-repeat;
+}
+#com_virtuemart .addtocart-area form .addtocart-button i:after,
+.comvirtuemartmod .addtocart-area form .addtocart-button i:after,
+#com_virtuemart .vm-details-button form .addtocart-button i:after,
+.comvirtuemartmod .vm-details-button form .addtocart-button i:after {
+  color: #c1a06c;
+}
+#com_virtuemart .productdetails-view .customer-reviews .date:before,
+.comvirtuemartmod .productdetails-view .customer-reviews .date:before {
+  color: #c2a26f;
+}
+#com_virtuemart .productdetails-view .customer-reviews .author,
+.comvirtuemartmod .productdetails-view .customer-reviews .author {
+  color: #c2a26f;
+}
+#com_virtuemart ul.steps li.current span,
+.comvirtuemartmod ul.steps li.current span,
+#com_virtuemart ul.steps li.current:before,
+.comvirtuemartmod ul.steps li.current:before {
+  color: #c2a26f;
+}
+#com_virtuemart #ui-tabs ul#tabs li.current,
+.comvirtuemartmod #ui-tabs ul#tabs li.current,
+#com_virtuemart #ui-tabs ul#tabs li:hover,
+.comvirtuemartmod #ui-tabs ul#tabs li:hover {
+  background: #c2a26f;
+}
+body.option-com_virtuemart #facebox .popup .content h6 {
+  margin-bottom: 10px;
+}
+body.option-com_virtuemart #facebox .content.my-groovy-style .title-out {
+  color: #c2a26f;
+}
+body.option-com_virtuemart #facebox .content.my-groovy-style .row-box-cart .row-box-width50 .title-left {
+  color: #c2a26f;
+}
+.jssora11l:hover {
+  background-color: rgba(194, 162, 111, 0.8);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c2a26f), color-stop(50%, #c2a26f), to(transparent));
+  background-image: -webkit-linear-gradient(#c2a26f, #c2a26f 50%, transparent);
+  background-image: -moz-linear-gradient(top, #c2a26f, #c2a26f 50%, transparent);
+  background-image: -o-linear-gradient(#c2a26f, #c2a26f 50%, transparent);
+  background-image: linear-gradient(#c2a26f, #c2a26f 50%, transparent);
+  background-repeat: no-repeat;
+}
+.jssora11r:hover {
+  background-color: #c2a26f;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(50%, #c2a26f), to(#c2a26f));
+  background-image: -webkit-linear-gradient(transparent, #c2a26f 50%, #c2a26f);
+  background-image: -moz-linear-gradient(top, transparent, #c2a26f 50%, #c2a26f);
+  background-image: -o-linear-gradient(transparent, #c2a26f 50%, #c2a26f);
+  background-image: linear-gradient(transparent, #c2a26f 50%, #c2a26f);
+  background-repeat: no-repeat;
+}
+.wrapper-inner .ratingbox,
+.wrapper-inner .vote {
+  color: #c2a26f;
+}
+.bs-example-tabs .nav-tab li a {
+  color: #c2a26f;
+}
+.product-neighbours .previous-page:hover {
+  color: #c2a26f;
+}
+.product-neighbours .next-page:hover {
+  color: #c2a26f;
+}
+@media (max-width: 767px) {
+  .rd-mobilemenu_ul a.iceMenuTitle:hover {
+    background: #c2a26f;
+  }
+  .rd-mobilemenu_ul a.active,
+  .rd-mobilemenu_ul li.level_1.active > a {
+    background: #c2a26f;
+  }
+  .rd-mobilemenu_submenu li.active > a {
+    background: #c2a26f;
+  }
+}

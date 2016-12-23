@@ -1,0 +1,99 @@
+body {
+	font-family: Verdana, Helvetica, Sans Serif;
+}
+
+a:link, a:visited {
+	color: #ffcccc; 
+    text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #FF3333;	
+    text-decoration: none;
+	font-weight: bold;
+}
+
+
+tr, td, p, div {
+   font-family: Verdana, Helvetica, Sans Serif;
+   font-size:  11px;
+   color: #ffffff;
+}
+h1 {
+	padding: 0;
+	font-family:Helvetica ,Arial,sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	vertical-align: bottom;
+	color: #ffffff;
+	text-align: left;
+	width: 100%;	
+}
+
+h2, .contentheading {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+h3 { 
+	margin: 0;
+}
+
+.componentheading, #mainbody h3 {
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 11px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #AB290F;
+	border-bottom: 1px solid #D2D8DE;
+}
+
+#mainbody h3 {
+	line-height: 140%;
+	height: 140%;
+	padding: 0;
+	text-indent: 0;
+}
+
+a.mainlevel:link, a.mainlevel:visited {
+	display: block;
+	width: 162px;
+	height: 18px; 
+background: url(../images/menue02.gif) 100% 0 no-repeat;
+         text-indent: 15px;
+         font-family: Verdana, Helvetica, Arial, ans-serif;
+         font-size: 11px;
+     color: #ffffff;
+}
+
+
+table.moduletable th {
+	text-align: left;
+	  	  font-size: 13px;
+  font-weight: bold;
+height: 26px;
+  line-height: 26px;
+  text-indent: 14px;
+}
+
+a.mainlevel:hover {
+	background-position: 100% -20px;
+	text-decoration: none;	
+        color: FF3333;
+}
+
+
+a.sublevel:link, a.sublevel:visited {
+	color: #ffffff;
+}
+
+
+a.sublevel:hover {
+	color: #FF3333;
+	
+}

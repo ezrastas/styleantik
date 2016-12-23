@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="4.5.2">
+  <name>digitaleye_moon</name>
+  <creationDate>16/02/2005</creationDate>
+  <author>Rohollah Balvardi</author>
+  <copyright>This template is released under GNU/GPL License.</copyright>
+  <authorEmail>balvardi@yahoo.com</authorEmail>
+  <authorUrl>www.templatefarsi.com</authorUrl>
+  <version>1.0</version>
+  <description>A fresh clean style, shows spirit of the company.Get PSD File into your zip fle downloaded from my site</description>
+  <files>
+    <filename>index.php</filename>
+    <filename>template_thumbnail.png</filename>
+  </files>
+  <images>
+    <filename>images/spacer.png</filename>
+    <filename>images/indent4.png</filename>
+	<filename>images/indent3.png</filename>
+    <filename>images/indent2.png</filename>
+	<filename>images/indent1.png</filename>
+	<filename>images/arrow.png</filename>
+	<filename>images/bac_page.png</filename>
+	<filename>images/footer.jpg</filename>
+	<filename>images/left.png</filename>
+	<filename>images/left_b_t_m.jpg</filename>
+	<filename>images/left_logo.jpg</filename>
+	<filename>images/menu.jpg</filename>
+	<filename>images/rating_star.png</filename>
+	<filename>images/rating_star_blank.png</filename>
+	<filename>images/right.png</filename>
+	<filename>images/right_b_t_m.jpg</filename>
+	<filename>images/right_logo.jpg</filename>
+	<filename>images/right_topmenu.jpg</filename>
+	<filename>images/templatefarsi.jpg</filename>
+	<filename>images/top_menu.jpg</filename>
+
+  </images>
+  <css>
+    <filename>css/template_css.css</filename>
+  </css>
+</mosinstall>

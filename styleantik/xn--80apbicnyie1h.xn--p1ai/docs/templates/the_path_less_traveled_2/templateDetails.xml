@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="4.5.1">
+	<name>The Path Less Traveled 2</name>
+	<creationDate>12 May 2005</creationDate>
+	<author>Ryan Rhode</author>
+	<copyright>GNU/GPL</copyright>
+	<authorEmail>admin@ty2u.com</authorEmail>
+	<authorUrl>http://www.ty2u.com</authorUrl>
+	<version>2</version>
+	<description>Let your visitors find tranquility with "The Path Less Traveled."  The graphic banner features a  country road that few may indeed travel.  The cool blue shades of this template create a serene atmosphere.</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<images>
+		<filename>images/arrow.png</filename>
+		<filename>images/button_bg.gif</filename>
+		<filename>images/contenthead.png</filename>
+		<filename>images/menu_bg.gif</filename>
+		<filename>images/pathway_bg.gif</filename>
+		<filename>images/subhead_bg.gif</filename>
+		<filename>images/spacer.png</filename>
+		<filename>images/header.jpg</filename>
+		</images>
+	<css>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>

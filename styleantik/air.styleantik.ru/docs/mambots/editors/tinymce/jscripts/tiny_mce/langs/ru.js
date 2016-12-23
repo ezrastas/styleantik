@@ -1,0 +1,43 @@
+// русские языковые константы - RU
+// @localized (C) 2005 Joom.Ru - Русский дом Joomla! Все права защищены.
+// @translator Oleg A. Myasnikov aka Sourpuss (sourpuss@mamboteam.ru)
+
+tinyMCE.addToLang('',{
+bold_desc : 'Полужирный (Ctrl+B)',
+italic_desc : 'Курсив (Ctrl+I)',
+underline_desc : 'Подчеркнутый (Ctrl+U)',
+striketrough_desc : 'Перечеркнутый',
+justifyleft_desc : 'Выровнять по левому краю',
+justifycenter_desc : 'Выровнять по центру',
+justifyright_desc : 'Выровнять по правому краю',
+justifyfull_desc : 'Выровнять по ширине',
+bullist_desc : 'Маркированный список',
+numlist_desc : 'Нумерованный список',
+outdent_desc : 'Уменьшить отступ',
+indent_desc : 'Увеличить отступ',
+undo_desc : 'Отменить',
+redo_desc : 'Повторить',
+link_desc : 'Вставить/изменить ссылку',
+unlink_desc : 'Убрать ссылку',
+image_desc : 'Вставить/изменить изображение',
+cleanup_desc : 'Вычистить грязный код',
+focus_alert : 'Вы должны находится в поле редактора перед использованием данной команды.',
+edit_confirm : 'Хотите ли Вы воспользоваться WYSIWYG редактором для этого поля ввода?',
+insert_link_title : 'Вставить/изменить ссылку',
+insert : 'Вставить',
+update : 'Применить',
+cancel : 'Отмена',
+insert_link_url : 'URL ссылки',
+insert_link_target : 'Открыть в...:',
+insert_link_target_same : 'том же окне',
+insert_link_target_blank : 'новом окне',
+insert_image_title : 'Вставить/изменить изображение',
+insert_image_src : 'URL изображения',
+insert_image_alt : 'Описание изображения',
+help_desc : 'Помощь',
+bold_img : "bold.gif",
+italic_img : "italic.gif",
+underline_img : "underline.gif",
+clipboard_msg : 'Копирование, вырезание и вставка не доступны в браузерах Mozilla и Firefox.\nХотите больше узнать об этой проблеме?',
+popup_blocked : 'Извините, но Вы должны отключить блокирование всплывающих окон с этого сайта, т.к. это необходимо для использования всех функций редактора.'
+});

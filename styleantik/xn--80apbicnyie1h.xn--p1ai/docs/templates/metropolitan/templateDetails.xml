@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="1.0">
+	<name>Metropolitan</name>
+	<creationDate>18/10/05</creationDate>
+	<author>Intuitive Designs</author>
+	<copyright>www.intuitivedesigns.net</copyright>
+	<authorEmail>naomi@intuitivedesigns.net</authorEmail>
+	<authorUrl>http://www.intuitivedesigns.net</authorUrl>
+	<version>1.0</version>
+	<description>Clean template with a slight metropolitan feel.</description>
+	<files>
+		<filename>index.php</filename>
+	</files>
+	<images>
+		<filename>images/buildings.gif</filename>
+		<filename>images/button-back.jpg</filename>
+		<filename>images/corner-left.gif</filename>
+		<filename>images/corner-right.gif</filename>
+		<filename>images/header-back.gif</filename>
+		<filename>images/header-left.gif</filename>
+		<filename>images/header-right.gif</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/left-back.jpg</filename>
+		<filename>images/logo.gif</filename>
+		<filename>images/main-back.jpg</filename>
+		<filename>images/menu-hover.jpg</filename>
+		</images>
+	<css>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>

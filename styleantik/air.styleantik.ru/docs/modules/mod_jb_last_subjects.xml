@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<mosinstall type="module">
+    <name>Последние темы</name>
+    <creationDate>28 June 2006</creationDate>
+    <author>TheNiceSpider</author>
+    <copyright>This module is released under the GNU/GPL License</copyright>
+    <authorEmail>thenicespider@yahoo.com</authorEmail>
+    <authorUrl>www.joomlafreeware.com</authorUrl>
+    <version>2.8</version>
+    <description>
+    <![CDATA[
+ 	История изменений Joomlaboard:
+	  <ul>
+	  <li>2.0: Now you can change how many lastest message do you want to show.</li>
+	  <li>2.0: Show latest posting with Username or not</li>
+	  <li>2.1: Show repeated subjects or not</li>
+	  <li>2.2: Include Reply subjects or not</li>
+      <li>2.2: Fix to display apostrope</li>
+      <li>2.3: Use Joomla ACL! Mean if you set Forum Category=Registered then Registered Users can see the subjects while visitor only see Public Category</li>
+      <li>2.4: Show Username, Realname, or none</li>
+      <li>2.4: Enable to set length of subjects</li>
+      <li>2.5: Include child categories</li>
+      <li>2.5: Fix anchor position</li>
+      <li>2.5: Whether to display posting date (use default Joomla date format)</li>      
+      <li>2.6: Support SEF</li>
+      <li>2.7: Support Multi Tabs!</li>
+      <li>2.8: Auto-width for Multi Tabs and Cookies Enable</li>
+      <li>2.8: Now you can display subject from all or multi-category. To display subject from all category leave Categori ID as blank. To display subjects only from Categori ID 3 enter 3. To display cat id 10,17, and 42, enter: 10,17,42</li>
+      <li>2.8: Show order number or not.</li>
+   	  <li>2.8: Added support: Module Class Suffix.</li>
+	  <li>2.8: Enable Tool-tips/Hints: Yes/No.</li>       
+      </ul>
+	]]>
+    </description>
+     <files>
+         <filename module="mod_jb_last_subjects">mod_jb_last_subjects.php</filename>
+         <filename>mod_jb_last_subjects/tabber/tabber.css</filename> 
+         <filename>mod_jb_last_subjects/tabber/tabber.js</filename> 
+         <filename>mod_jb_last_subjects/tabber/tabber-minimized.js</filename>
+		 <filename>mod_jb_last_subjects/function/function.tabber.php</filename> 
+         
+     </files>
+     <params>
+        <param name="category" type="text" default="" label="ID категории" description="Отображает тему определенной Категории ID. Оставьте пробел, чтобы показать темы всей категории. Чтобы показывать категорию ID 10, 17 и 21, введите: 10,17,21." />
+        <param name="count" type="text" default="20" label="Итог" description="Количество элементов для отображения" />
+        <param name="count_per_page" type="text" default="10" label="Количество тем в таблице" description="Количество тем в таблице Если Вы установите COUNT=15 и SUBJECT PER TAB=10  тогда, этот модуль покажет 10 предметов в таблице 1 и остальных 5 в таблице 2." />
+        <param name="show_author" type="radio" default="username" label="Отображать автора" description="Выберите, показать ли имя пользователя автора, реальное имя или нет">
+			<option value="username">Ник</option>
+			<option value="realname">Реальное имя</option>
+			<option value="none">Нет</option>
+		</param>
+		<param name="singlesubject" type="radio" default="0" label="Отображать одиночные темы" description="Показать только однажды для повторяющихся тем">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="replysubject" type="radio" default="1" label="Отображать (RE:) темы" description="ДА для отображения темы ответа (ответы начинаются с RE:)">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="subject_length" type="text" default="100" label="Длинна темы" description="Длина отображаемой темы (по умолчанию 100 символов)" />
+		<param name="show_date" type="radio" default="0" label="Отображать дату" description="ДА для показа даты">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="show_order_number" type="radio" default="1" label="Отображать цыфрами уровень" description="ДА для показа номера линии.">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="tooltips_enable" type="radio" default="1" label="Разрешить инструмет-Подсказки/Намека" description="Установите ДА для подсказок или намеков.">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Суффикс класса модуля" description="Суффикс, который будет применен к css классу модуля (table.moduletable), это позволит индивидуально моделировать модуль." />
+     </params>
+</mosinstall>

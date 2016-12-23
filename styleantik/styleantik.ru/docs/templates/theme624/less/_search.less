@@ -1,0 +1,183 @@
+// =======================
+// Search
+// =======================
+//Input
+@searchInputHeight: 38px;
+@searchInputWidth: 207px;
+@searchInputLineHeight: @baseLineHeight;
+@searchInputBorder: 1px solid #cecece;
+
+//Form Icon
+@searchFormIconSize: 17px;
+@searchFormIconColor: #000;
+@searchFormIconBackground: transparent;
+@searchFormLineHeight: @searchInputHeight;
+@searchFormIconWidth: 20px;
+@searchFormIconHoverColor: #FFF;
+@searchFormIconHoverBackground: #000;
+
+@searchInputPadding: ((@searchInputHeight - @searchInputLineHeight)/2) @searchFormIconWidth+10px ((@searchInputHeight - @searchInputLineHeight)/2) 10px;
+
+div.moduletable.virtuemart_search {
+  width: 270px;
+  float: right;
+  margin-right: 30px;
+  padding-top: 19px;
+  @media (min-width: 980px) and (max-width: 1199px) {
+    padding-top: 14px;
+  }
+  @media (min-width: 768px) and (max-width: 979px) {
+    padding-top: 14px;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    float: none;
+    display: inline-block;
+    margin-right: 0;
+  }
+}
+.mod_virtuemart_search{
+  position: relative;
+  // Search Input
+  input {
+    height: @searchInputHeight;
+    padding: @searchInputPadding;
+    padding-right: 10px;
+    border: @searchInputBorder;
+    .transition(all .2s ease);
+    width: @searchInputWidth;
+    margin: 0;
+    float: left;
+    width: ;
+    background: #f5f5f5;
+    .box-shadow(none);
+  }
+
+  // Search Form icon
+  .btn {
+    background: #282828 url(../images/btn-src.gif) left top repeat-x;
+    border: none;
+    padding: 0;
+    width: 60px;
+    height: 38px;
+    line-height: 36px;
+    border: 1px solid #292929;
+    float: right;
+    text-align: center;
+    z-index: 100;
+    color: #fff;
+    font-size: 15px;
+    .transition(all .2s ease);
+    &:active,
+    &:focus,
+    &:hover,
+    &.active,
+    &.selected {
+      background: @searchFormIconHoverBackground;
+      color: @searchFormIconHoverColor;
+      &:hover,
+      &.active,
+      &.selected {
+        background: @searchFormIconHoverBackground;
+        color: @searchFormIconHoverColor;
+      }
+    }
+    span {
+      padding: 0;
+    }
+    .fa {
+      font-size: 15px;
+    }
+  }
+}
+
+#searchForm {
+  fieldset {
+    margin-bottom: 20px;
+    .controls {
+      > label {
+        display: inline-block;
+        margin-right: 1em;
+      }
+      span.radio {
+        margin-right: 10px;
+      }
+    }
+  }
+  .form-limit {
+    label {
+      float: left;
+      margin-right: 5px;
+      line-height: @inputHeight;
+    }
+    > span.select,
+    > select {
+      float: right;
+      position: relative;
+      top: -10px;
+    }
+    p {
+      clear: both;
+      overflow: hidden;
+    }
+  }
+  .phrases-box {
+    float: left;
+    > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    strong {
+      padding-right: 10px;
+      line-height: @radioHeight;
+      vertical-align: middle;
+    }
+    .controls {
+      > label {
+        min-width: 90px;
+        + label {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .ordering-box {
+    float: right;
+    strong {
+      vertical-align: middle;
+      padding-right: 10px;
+    }
+  }
+  .chzn-container {
+    min-width: 200px;
+  }
+}
+
+dl.search-results {
+  margin-bottom: 30px;
+  dt {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #searchForm .phrases-box,
+  #searchForm .ordering-box {
+    float: none;
+    padding-bottom: @baseLineHeight;
+  }
+}
+
+@media (max-width: 479px) {
+  #searchForm .phrases-box > .controls,
+  #searchForm fieldset .controls > label {
+    display: block;
+  }
+
+  #searchForm .btn-toolbar .btn-group {
+    width: 70%;
+    +.btn-group{
+      width: 20%;
+    }
+  }
+
+}

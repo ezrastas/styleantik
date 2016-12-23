@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template">
+<name>netJuice</name>
+<creationDate>06-08-2005</creationDate>
+<author>AriadneCMS</author>
+<copyright>This template is released under the GNU/GPL License</copyright>
+<authorEmail>redazione@ariadnecms.it</authorEmail>
+<authorUrl>http://www.ariadnecms.it/</authorUrl>
+<version>1.0</version>
+<description>A tableless template with an icon bar, styled in CSS</description>
+<files>
+  <filename>index.php</filename>
+  <filename>template_thumbnail.png</filename>
+  <filename>jscript/moving_bits.js</filename>
+</files>
+<images>
+  <filename>images/about.gif</filename>
+  <filename>images/animarrow.gif</filename>
+  <filename>images/arrow.png</filename>
+  <filename>images/audio_jack.jpg</filename>
+  <filename>images/audio_jack_big.jpg</filename>
+  <filename>images/box_bottom.jpg</filename>
+  <filename>images/chat.gif</filename>
+  <filename>images/css-80x15.png</filename>
+  <filename>images/dots.png</filename>
+  <filename>images/download.gif</filename>
+  <filename>images/email.gif</filename>
+  <filename>images/gallery.gif</filename>
+  <filename>images/home.gif</filename>
+  <filename>images/links.gif</filename>
+  <filename>images/news.gif</filename>
+  <filename>images/php-80x15.png</filename>
+  <filename>images/rj45plug.jpg</filename>
+  <filename>images/rj45plug_big.jpg</filename>
+  <filename>images/rj45plug_big2.jpg</filename>
+  <filename>images/scart_plug_big.jpg</filename>
+  <filename>images/serial_plug_big.jpg</filename>
+  <filename>images/serial_plug_big2.jpg</filename>
+  <filename>images/users.gif</filename>
+  <filename>images/xhtml-80x15.png</filename>
+</images>
+<css>
+  <filename>css/template_css.css</filename>
+</css>
+</mosinstall>

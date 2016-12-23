@@ -1,0 +1,491 @@
+/*
+-------------------------------------------
+Metropolis Joomla Template
+Author:   Intuitive Designs
+Author Web Site: www.intuitivedesigns.net
+-------------------------------------------
+*/
+/* ---- main styles ---- */
+body {
+	background-color: #FFF;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../images/main-back.jpg);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	font-size        : 90%;
+}
+tr, p, div, td {
+  font-family      : Arial, Helvetica, sans-serif;
+  font-size        : 1em;
+  color            : #333;
+}
+hr {
+  background       : #E2E1CC;
+  height           : 1px;
+  width            : 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  line-height: 15px;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+h1 {
+	font-family      : Arial, Helvetica, sans-serif;
+	color            : #eeaf29;
+	font-size        : 1.6em;
+}
+h2 {
+	font-family      : Arial, Helvetica, sans-serif;
+	color            : #eeaf29;
+	font-size        : 1.4em;
+}
+h3 {
+	font-family      : Arial, Helvetica, sans-serif;
+	color            : #eeaf29;
+	font-size        : 1.2em;
+}
+h4 {
+	font-family      : Arial, Helvetica, sans-serif;
+	color            : #eeaf29;
+	font-size        : 1em;
+}
+
+/* --Default Class Settings-- */
+#mainlevel {
+width: 100%;
+margin-right: 0px;
+}
+#mainlevel ul li {
+	list-style-type: none;
+}
+a.mainlevel:link, a.mainlevel:visited {
+	display: block;
+	color: #333;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	height: 20px;
+	border-bottom: 1px solid #E2E1CC;
+	padding-top: 5px;
+	text-indent: 10px;
+	white-space: nowrap;
+}
+a.mainlevel:hover {
+	display: block;
+	color: #333;
+	text-decoration: none;
+	background-color: #FFF;
+	background-image: url(../images/menu-hover.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	
+}
+a#active_menu  {
+	display: block;
+	color: #3B3B3B;
+	text-decoration: none;
+	background-image: url(../images/menu-hover.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+a.mainmenu:link, a.mainmenu:visited {
+}
+
+a.mainmenu:hover {
+color: #333; 
+}
+a.sublevel:link, a.sublevel:visited {
+        padding-left: 1px;
+        font-size: 1.1em;
+        color: #3B3B3B;
+        text-align: left;
+}
+
+
+a.sublevel:hover {
+color: #3B3B3B; text-decoration: underline;
+}
+
+table.moduletable {
+	width: 95%!important;
+	width: 93%; /* ---- for IE ---- */
+	margin-bottom: 5px;
+}
+
+table.moduletable th {
+	font-size: 1.2em;
+	color: #807f59;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 0px;
+}
+
+table.moduletable ul {
+	padding: 0px;
+}
+table.moduletable td {
+font-size: 1em;
+font-weight: normal;
+text-align:left;
+}
+
+.sectiontableheader {
+  color            : #333;
+  font-weight      : bold;
+}
+.sectiontableentry1 {
+	background-color: #E6E4DF;
+}
+.sectiontableentry2 {
+	background-color: #F4F3F0;
+}
+.small {
+  font-family      : Arial, Helvetica, sans-serif;
+  font-size        : .9em;
+  color            : #959486;
+}
+.smalldark {
+	font-family      : Arial, Helvetica, sans-serif;
+  font-size        : .9em;
+  color            : #333;
+}
+.contentpane {
+padding: 0px;
+}
+.contentpaneopen {
+  width: 100%;
+  padding: 5px;
+}
+.contentheading, .componentheading {
+	font-family      : Arial, Helvetica, sans-serif;
+	font-size        : 1.2em;
+	color            : #EEAF29;
+	text-align       : left;
+	height: 20px;
+	font-weight: bold;
+}
+
+.createdate {
+  font-family      : Arial, Helvetica, sans-serif;
+  font-size        : .9em;
+  color            : #333;
+  text-align       : left;
+}
+
+
+.button {
+	font-family      : Arial, Helvetica, sans-serif;
+	font-size        : .98em;
+	font-weight      : bold;
+	color            : #333;
+	background-color: #fff;
+	height: 25px;
+	border: 3px double #CCC;
+	margin: 3px;
+}
+
+.inputbox {
+	font-family      : Arial, Helvetica, sans-serif;
+	font-size        : .9em;
+	color            : #333;
+	background-color : #FFF;
+	border           : 1px solid #ccc;
+	font-weight: bold;
+	margin: 3px;
+}
+
+a:link, a:visited {
+	color: #7D7A4D;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #7D7A4D;
+}
+
+/* ----For content item titles that are hyperlink instead of Read On---- */
+a.contentpagetitle:link, a.contentpagetitle:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size        : 1.2em;
+	font-weight: bold;
+ 	color: #eeaf29;
+	text-align:left;
+	text-decoration: none;
+	}
+
+a.contentpagetitle:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size        : 1.2em;
+	font-weight: bold;
+ 	color: #eeaf29;
+	text-align:left;
+	text-decoration: underline;
+	font-weight: bold;
+	}
+
+a.category:link, a.category:visited {
+  color: #176285;
+  font-weight      : bold;
+  font-size        : 1em;
+font-weight: bold;
+text-decoration: none;
+}
+
+a.category:hover {
+  color: #FFF;
+  background-color: #176285;
+  text-decoration: underline;
+}
+
+/* ----Styles for dhtml tabbed-pages---- */
+.ontab {
+	background-color: #EFEFEF;
+	border-left: 2px outset #9999CC;
+	border-right: 2px outset #808080;
+	border-top: 2px outset #9999CC;
+	border-bottom: 1px solid #d5d5d5;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.offtab {
+	background-color : #e5e5e5;
+	border-left: outset 2px #E0E0E0;
+	border-right: outset 2px #E0E0E0;
+	border-top: outset 2px #E0E0E0;
+	border-bottom: solid 1px #d5d5d5;
+	text-align: center;
+	font-weight: normal;
+}
+.tabpadding {
+}
+
+.tabheading {
+	background-color: #9999CC;
+	text-align: left;
+}
+.pagetext {
+	visibility: hidden;
+	display: none;
+	position: relative;
+	top: 0;
+}
+/* for modifying {moscode} output.  Don't set the colour! */
+.moscode {
+	background-color: #f0f0f0;
+}
+.code {
+	background-color: #f0f0f0;
+	border: 1px solid #FFF;
+}
+/* Text passed with mosmsg url parameter */
+.message {
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size        : .9em;
+	color : #999;
+	text-align: center;
+}
+
+/* Javascript Back button */
+.back_button {
+	text-align: center;
+	font-size        : .9em;
+}
+table.contenttoc {
+	color: #333300;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+table.contenttoc td {
+    font-size        : .9em;
+    font-weight: normal;
+    text-align:left;
+	padding: 5px;
+}
+table.searchinto {
+	width: 100%;
+}
+
+table.searchintro td {
+	background-color: #F7F7F4;
+	color: #999999;
+	font-weight: bold;
+}
+/* Custom*/
+ #wrapper
+{
+	width: 95%;
+	color: #333;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/corner-left.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-color: #FFF;
+	min-width: 710px;
+}
+#main {
+  clear: both;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-image: url(../images/corner-right.gif);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#content {
+	width: 76%;
+	float: right;
+	margin-top: 10px;
+	padding-right: 2%;
+	padding-bottom: 1%;
+	padding-left: 2%;
+}
+
+
+#logo {
+	margin-bottom: 5px;
+	margin-top: 30px;
+	float:left;
+	width: 200px;
+}
+#logo a:hover{
+	background-color:transparent;
+}
+#buildings{
+	margin-top: 5px;
+	float:right;
+	width: 346px;
+}
+.clear {
+  clear: both;
+  height: 1px;
+  overflow: hidden;   /* prevent IE expanding the container */
+  margin: 0;          /* keep flush with surrounding blocks */
+}
+
+#header
+{
+	padding: 0px;
+	height: 150px;
+}
+#headerleft
+{
+	height: 150px;
+	background-color: #FFF;
+	background-image: url(../images/header-left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#headerright
+{
+	height: 150px;
+	background-color: #FFF;
+	margin-left: 5px;
+	background-image: url(../images/header-right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+#headerback
+{
+margin-right: 5px;
+height: 150px;
+	background-color: #FFF;
+	background-image: url(../images/header-back.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+#leftnav
+{
+	margin-right: 78%!important;
+	margin-right: 76%;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 0;
+	width: auto!important;
+	width: 100%;
+	background-image: url(../images/left-back.jpg);
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+
+
+#footer
+{
+	background-color: #FFF;
+	margin: 0;
+	padding-right: 2%;
+	padding-left: 2%;
+	margin-top: 10px;
+}
+#footer td
+{
+	text-align: center;
+}
+#top
+{
+	background-color: #FFF;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	text-align: right;
+}
+
+#mainlevel-nav {
+	height: 22px;
+	text-align: right;
+	position: relative;
+	padding-top: 3px;
+}
+ #mainlevel-nav ul
+{
+list-style-type: none;
+text-align: center;
+}
+#mainlevel-nav li {
+	padding: 5px;
+	 display: inline;
+	list-style-type: none;
+}
+#mainlevel-nav a {
+	text-decoration: none;
+	color: #333;
+	font-size: .9em;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 5px;
+	height: 1%;
+	text-transform: uppercase;
+	border-bottom: 5px solid white;
+}
+
+#mainlevel-nav a:hover {
+	color: #333;
+	text-decoration: none;
+	background-color: #FFF;
+	border-bottom: 5px solid #EEAF29;
+}
+a.mainlevel-nav:active {
+color: #808080;
+}
+
+#content h2 { margin: 0 0 .5em 0; }

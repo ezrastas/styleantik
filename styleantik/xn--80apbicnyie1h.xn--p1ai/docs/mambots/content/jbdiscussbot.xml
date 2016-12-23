@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="mambot" group="content">
+   <name>Îáñóæäåíèÿ íà ôîðóìå</name>
+   <author>Two Shoes M-Factory</author>
+   <creationDate>January 2006</creationDate>
+   <copyright>(C) 2000 - 2006 Two Shoes M-Factory</copyright>
+   <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+   <authorUrl>http://www.tsmf.net</authorUrl>
+   <authorEmail>info@tsmf.net</authorEmail>
+   <version>2.4 (for Joomla 1.0.x)</version>
+   <description><![CDATA[
+	   <div align="left">
+	   <strong><font face="Verdana, Arial, Helvetica, sans-serif" class="sectionname">Ìîä îáñóæäåíèé "Joomlaboard"</font></strong><br />
+	   Ïîçâîëÿåò îáñóæäàòü ñîäåðæèìîå ñàéòà íà ôîðóìå âàøåãî ñàéòà.<br/>
+	   Íåçàáóäüòå îïóáëèêîâàòü Discussbot â íàñòðîéêàõ Joomlaboard!<br />
+	   Êðîìå òîãî, çàìåòüòå ÷òî &quot;cheat-sheet&quot; ïîñêîëüêó discussbot äîñòóïåí â òåõæå íàñòðîéêàõ!<br /><br />
+	   <strong>Discussbot - Êíîïêà</strong><br />
+	   Îáðàòèòå âíèìàíèå, ÷òî åñòü óäîáíàÿ êíîïêà "Discussbot", äîñòóïíàÿ äëÿ áîëåå óäîáíîé âñòàâêè. Êíîïêà äîáàâëåííàÿ â âàø WYSIWYG ðåäàêòîð, äàåò âàì âîçìîæíîñòü ñîçäàòü ïðàâèëüíûé ñèíòàêñèñ îäíèì ùåë÷êîì âàøåé ìûøè!<br /><br />
+	   <strong><em>Ñîâåò:</em></strong> èñïîëüçóéòå êíîïêó "Ïîêàçàòü ññûëêè MosbotShow" äëÿ óäîáíîãî ïðîñìîòðà ID íà âàøåì ñàéòå!<br />
+	   Ýòî íàõîäèòüñÿ â - Êîìïîíåíòû->Ôîðóì Joomlaboard-> Êîíôèãóðàöèÿ Joomlaboard-> Èíòåãðàöèÿ òàáëèöè!
+	    </div>
+     	]]>
+   </description>
+   <files>
+      <filename mambot="jbdiscussbot">jbdiscussbot.php</filename>
+   </files>
+    <params>
+        
+    </params>
+</mosinstall>

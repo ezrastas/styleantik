@@ -1,0 +1,2 @@
+# logrotate
+00 00 * * *	/bin/sh -c \"/usr/local/sbin/logrotate -s /var/run/logrotate.state /home/styleantik/etc/logrotate.conf\" >/dev/null 2>&1 

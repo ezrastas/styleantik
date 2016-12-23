@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="1.0">
+<name>owtweb_0901</name>
+<creationDate>09.01.2006</creationDate>
+<author>Olaf Wilde</author>
+<copyright>GNU/GPL</copyright>
+<authorEmail>owtweb@web.de</authorEmail>
+<authorUrl>http://www.owtweb.de</authorUrl>
+<version>0.1</version>
+<description>Copyright OWTweb -  Das Template ist fuer jeden zur eigenen Verwendung freigegeben. Es ist nicht erlaubt, den Copyright-Link zu entfernen. Es ist nicht erlaubt, dieses Template als eigenes auszugeben bzw. es weiter zu verkaufen.</description>
+<files>
+<filename>index.php</filename>
+<filename>template_thumbnail.png</filename>
+</files>
+<images>
+<filename>images/arrow.png</filename>
+<filename>images/menue02.gif</filename>
+<filename>images/indent.png</filename>
+<filename>images/indent1.png</filename>
+</images>
+<css>
+<filename>css/template_css.css</filename> 
+</css>
+</mosinstall>
+
+
+
+
+

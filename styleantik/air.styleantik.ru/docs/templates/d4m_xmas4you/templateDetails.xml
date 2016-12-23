@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template">
+  <name>d4m_xmas4you</name>
+  <creationDate>Dec 2005</creationDate>
+  <author>Design For Mambo</author>
+  <copyright>Template is created by Design For Mambo</copyright>
+  <authorEmail>design@designformambo.com</authorEmail>
+  <authorUrl>www.designformambo.com</authorUrl>
+  <version>1.0</version>
+	<description><![CDATA[
+		DesignForMambo.com is proud and happy to bring to you this template. Each our template has demo mode which shows you details on template elements, such as positions, static images, text, ect. By default this mode is turned off so not to distract you. You can easily turn on demo mode by following these simple steps:<br/><br/>
+		1. Login to your Mambo backend<br/><br/>
+		2. Go to <b>Site</b> -> <b>Template Manager</b> -> <b>Site Templates</b><br/><br/>
+		3. In the template listing page, check the box beside your template name then click the <b>Edit HTML</b> button at top of that page<br/><br/>
+		4. In the <b>Edit HTML</b> page, find the variable <b>$demo_mode</b> in the text area and set its value to <b>1</b><br/><br/>
+		5. Finally, click the <b>Save</b> button at top of the <b>Edit HTML</b> page.<br/><br/>
+		
+		This template comes with 2 .psd file for logo image and header image. You can use them to create new images for you website and apply them to template. Please turn on demo_mode to see how to change images.
+
+		Thank you for choosing our service. We wish you health and prosperity.
+		]]></description>
+<files>
+    <filename>index.php</filename>
+    <filename>template_thumbnail.png</filename>
+    <filename>tooltip_text.js</filename>
+    <filename>wz_tooltip.js</filename>
+</files>
+
+<images>
+	<filename>images/button_bg.gif</filename>
+	<filename>images/emailButton.png</filename>
+	<filename>images/header_image.jpg</filename>
+	<filename>images/arrow.png</filename>
+	<filename>images/leftpart_bg.gif</filename>
+	<filename>images/list_bullet.gif</filename>
+	<filename>images/logo.gif</filename>
+	<filename>images/mainlevel_over.gif</filename>
+	<filename>images/mainpart_bg.gif</filename>
+	<filename>images/module_trees.gif</filename>
+	<filename>images/moduletable_bg.gif</filename>
+	<filename>images/pathway_trees.gif</filename>
+	<filename>images/pdf_button.png</filename>
+	<filename>images/printButton.png</filename>
+	<filename>images/spacer.gif</filename>
+	<filename>images/sublevel_over.gif</filename>
+	<filename>images/h_div.gif</filename>
+	<filename>images/h_dotdiv.gif</filename>
+	<filename>images/v_div.gif</filename>
+	<filename>images/v_dotdiv.gif</filename>
+	<filename>images/indent1.png</filename>
+	<filename>images/body_bg.gif</filename>
+</images>
+
+<css>
+	<filename>css/template_css.css</filename>
+</css>
+
+</mosinstall>

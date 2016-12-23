@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="4.5.1">
+	<name>Brazen Ascend</name>
+	<creationDate>30 May 2005</creationDate>
+	<author>Ryan Rhode</author>
+	<copyright>GNU/GPL</copyright>
+	<authorEmail>admin@ty2u.com</authorEmail>
+	<authorUrl>http://www.ty2u.com</authorUrl>
+	<version>1</version>
+	<description>Brazen Ascend is a tan colored template.  It comes with a logo psd file and a matching header image depicting clouds.  - The psd file for the logo is inside the extras folder inside the zip. Visit http://www.ty2u.com for more free Mambo templates! Originally based on Solar Flare II by rhuk.  Thank you!</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>extras/logo.psd</filename>
+	</files>
+	<images>
+		<filename>images/arrow.png</filename>
+		<filename>images/button_bg.png</filename>
+		<filename>images/contenthead.png</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/indent2.png</filename>
+		<filename>images/indent3.png</filename>
+		<filename>images/indent4.png</filename>
+		<filename>images/header.gif</filename>
+		<filename>images/menu_bg.png</filename>
+		<filename>images/background.gif</filename>
+		<filename>images/spacer.png</filename>
+		<filename>images/subhead_bg.png</filename>
+		<filename>images/logo.gif</filename>
+		</images>
+	<css>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>

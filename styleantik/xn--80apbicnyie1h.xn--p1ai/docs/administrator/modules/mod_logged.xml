@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module">
+	<name>Авторизованные на сайте пользователи</name>
+	<author>Joomla! Project</author>
+	<creationDate>Январь 2005</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0 RE</version>
+	<description>Этот модуль показывает список пользователей, авторизованных в настоящее время на сайте</description>
+	<files>
+		<filename module="mod_logged">mod_logged.php</filename>
+	</files>
+	<params/>
+</mosinstall>

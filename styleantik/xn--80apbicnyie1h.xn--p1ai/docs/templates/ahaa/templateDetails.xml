@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template">
+	<name>ahaa</name>
+	<creationDate>04/06/2004</creationDate>
+	<author>Itura</author>
+	<copyright>This template is released under the Commercial License. Please view our licence Clause for more details</copyright>
+	<authorEmail>admin@itura.net</authorEmail>
+	<authorUrl>www.itura.net</authorUrl>
+	<version>1.0</version>
+	<description>Ahaa is a fixed width template, it can be best used in 800x600 and up. If you need           help, do not hessitate to email the author. 
+	</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<images>
+		<filename>images/index1.gif</filename>
+		<filename>images/index2.gif</filename>
+		<filename>images/index3.gif</filename>
+		<filename>images/index4.gif</filename>
+		<filename>images/index5.gif</filename>
+		<filename>images/index6.gif</filename>
+		<filename>images/index7.gif</filename>
+		<filename>images/index8.gif</filename>
+		<filename>images/index9.gif</filename>
+		<filename>images/index10.gif</filename>
+		<filename>images/index11.gif</filename>
+		<filename>images/index12.gif</filename>
+		<filename>images/index13.gif</filename>
+		<filename>images/index14.gif</filename>
+		<filename>images/index15.gif</filename>
+		<filename>images/index16.gif</filename>
+		<filename>images/index17.gif</filename>
+		<filename>images/index18.gif</filename>
+		<filename>images/index19.gif</filename>
+		<filename>images/index20.gif</filename>
+		<filename>images/index21.gif</filename>
+		<filename>images/index22.gif</filename>
+		<filename>images/index23.gif</filename>
+		<filename>images/index24.gif</filename>
+		<filename>images/index25.gif</filename>
+		<filename>images/index26.gif</filename>
+		<filename>images/index27.gif</filename>
+		<filename>images/index28.gif</filename>
+		<filename>images/spacer.gif</filename>
+	</images>
+	<css>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>

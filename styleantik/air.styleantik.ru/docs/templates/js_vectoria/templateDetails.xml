@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="4.5.1">
+	<name>js_vectoria</name>
+	<creationDate></creationDate>
+	<author>JoomlaShack</author>
+	<copyright>www.joomlashack.com</copyright>
+	<authorEmail>joomlashack@gmail.com</authorEmail>
+	<authorUrl>http://www.joomlashack.com</authorUrl>
+	<version>1.0</version>
+	<description>js_vectoria is a free template for Joomla by www.joomlashack.com.</description>
+<files>
+	<filename>index.php</filename>
+	<filename>templateDetails.xml</filename>
+	<filename>template_thumbnail.png</filename>
+</files>
+<images>
+	<filename>images/arrow.gif</filename>
+	<filename>images/bullet.gif</filename>
+	<filename>images/butbg.png</filename>
+	<filename>images/hsep.png</filename>
+	<filename>images/indent1.png</filename>
+	<filename>images/js_bg_l.png</filename>
+	<filename>images/js_bg_r.png</filename>
+	<filename>images/js_bottom.png</filename>
+	<filename>images/js_hdl_l.png</filename>
+	<filename>images/js_hdl_r.png</filename>
+	<filename>images/js_header.png</filename>
+	<filename>images/js_mb_bg.png</filename>
+	<filename>images/js_top.png</filename>
+	<filename>images/js_uf_b.png</filename>
+	<filename>images/menu_bg.png</filename>
+	<filename>images/spacer.png</filename>
+	<filename>images/vsep.png</filename>
+</images>
+<css>
+	<filename>css/index.html</filename>
+	<filename>css/template_css.css</filename>
+</css>
+</mosinstall>

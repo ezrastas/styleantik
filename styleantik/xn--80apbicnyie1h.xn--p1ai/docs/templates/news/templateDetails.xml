@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="4.5.2">
+	<name>news</name>
+	<creationDate>30/05/05</creationDate>
+	<author>Zoran Karadza</author>
+	<copyright>GNU/GPL</copyright>
+	<authorEmail>zoran.karadza@gmail.com</authorEmail>
+	<authorUrl>http://www.zkaradza.tk</authorUrl>
+	<version>1.0</version>
+	<description>Template for portals. Read readme.txt for more information how to customize template to suit your needs</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>readme.txt</filename>
+
+	</files>
+	<images>
+		<filename>images/arrow.png</filename>
+		<filename>images/back.jpg</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/indent2.png</filename>
+		<filename>images/indent3.png</filename>
+		<filename>images/indent4.png</filename>
+		<filename>images/mambo_header.jpg</filename>
+		<filename>images/menu2.png</filename>
+		<filename>images/menu.png</filename>
+		<filename>images/menu_bg1.jpg</filename>
+		<filename>images/menu_bg.jpg</filename>
+		<filename>images/readon_back.png</filename>
+		<filename>images/shadow_1.gif</filename>
+		<filename>images/shadow_2.gif</filename>
+		<filename>images/shadow_3.gif</filename>
+		<filename>images/shadow_4.gif</filename>
+		<filename>images/shadow_bottom.gif</filename>
+		<filename>images/shadow_top.gif</filename>
+		<filename>images/shadow_left.gif</filename>
+		<filename>images/shadow_right.gif</filename>
+		<filename>images/silver_background.jpg</filename>
+		<filename>images/spacer.png</filename>
+		<filename>images/top_back.jpg</filename>
+		<filename>images/top_back.png</filename>
+		</images>
+	<css>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>

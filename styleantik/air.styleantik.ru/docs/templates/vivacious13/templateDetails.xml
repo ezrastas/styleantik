@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="4.5.1">
+	<name>Vivacious13</name>
+	<creationDate>03 July 2005</creationDate>
+	<author>Ryan Rhode</author>
+	<copyright>GNU/GPL</copyright>
+	<authorEmail>admin@ty2u.com</authorEmail>
+	<authorUrl>http://www.ty2u.com</authorUrl>
+	<version>1.3</version>
+	<description>This template is vivacious(cheerful)!!! 100% width. v1.1 - Fixed various bugs.  v1.2 - Added a bottom module position.  v1.3 - Put border around bottom module.</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<images>
+		<filename>images/boxb.gif</filename>
+		<filename>images/boxbl.gif</filename>
+		<filename>images/boxbr.gif</filename>
+		<filename>images/boxl.gif</filename>
+		<filename>images/boxr.gif</filename>
+		<filename>images/tab1.gif</filename>
+		<filename>images/tab2.gif</filename>
+		<filename>images/logo.gif</filename>
+		<filename>images/side-back.gif</filename>
+		<filename>images/searchdiv.gif</filename>
+		<filename>images/search.gif</filename>
+		<filename>images/box-bottom.gif</filename>
+		<filename>images/modhead.gif</filename>
+		<filename>images/head-g.gif</filename>
+		<filename>images/head-y.gif</filename>
+		<filename>images/head-b.gif</filename>
+		<filename>images/head-p.gif</filename>
+	</images>
+	<css>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>

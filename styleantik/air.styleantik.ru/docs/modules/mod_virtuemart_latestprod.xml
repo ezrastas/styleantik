@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module">
+    <name>Последние поступления</name>
+    <creationDate>22.03.2005</creationDate>
+  <author>Соерен Эберхард, перевод команда Rusvirtuemart </author>
+    <copyright>RusVirtueMart выпускается под GNU/GPLicense</copyright>
+    <authorEmail>admin@virtuemart.ru</authorEmail>
+    <authorUrl>http://www.virtuemart.ru</authorUrl>
+    <version>1.2</version>
+    <description>Показывает последние постулпения в вашем магазине.</description>
+     <files>
+         <filename module="mod_virtuemart_latestprod">mod_virtuemart_latestprod.php</filename>
+     </files>
+    <params>
+     <param name="max_items" type="text" default="2" label="Количество отображаемых товаров" description="Задает количество товаров которые будут отображены в модуле." />
+     <param name="show_price" type="list" default="1" label="Показывать цену товара?"
+      description="Задает будет ли показываться цена товара." >
+        <option value="1">Да</option>
+        <option value="0">Нет</option>
+      </param>
+      
+      <param name="show_addtocart" type="list" default="1" label="Показывать ссылку положить-в-корзину?"
+      description="Задает будет ли отображатся ссылка положить-в-корзину или нет." >
+        <option value="1">Да</option>
+        <option value="0">Нет</option>
+      </param>
+         <param name="display_style" type="list" default="vertical" label="Стиль отображения" description="Задает стиль отображения товаров">
+        <option value="horizontal">Горизонтально (1 Строка)</option>
+        <option value="vertical">Вертикально (1 Колонка)</option>
+        <option value="table">Таблицей (X строк и Y колонок)</option>
+     </param>
+     <param name="products_per_row" type="text" default="4" label="Товаров на строку" description="Применяется если выбран стиль таблица: Задает количество товаров оторажаемых в каждойстрочке." />
+     <param name="category_id" type="text" default="" label="Из категории:" description="&lt;strong&gt;Например:&lt;/strong&gt; Если зададите 2,5&lt;br /&gt;То будут отображатся товары из категорий у которых ID=2 или ID=5." />
+     <param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS для модуля" description="Суффикс добавляется к названию класса css модуля (table.moduletable), это позволяет задавать стиль только для этого модуля" />
+    <param name="class_sfx" type="text" default="" label="Суффикс класса CSS для меню" description="Суффикс позволяет задать стиль только для этого меню" />
+    </params>
+</mosinstall>

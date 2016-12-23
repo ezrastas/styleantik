@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="4.5.2">
+	<name>Rocky Mountain Sunrise</name>
+	<creationDate>August 20, 2005</creationDate>
+	<author>Randy Carver</author>
+	<copyright>This template is released under the GNU/GPL License</copyright>
+	<authorEmail>randy@carver-family.com</authorEmail>
+	<authorUrl>www.carver-family.com</authorUrl>
+	<version>0.92</version>
+	<description>A Tableless 3 Column Variable width template with a bottom background image of a sunrise coming over the continental divide.  Images and code copyright 2005, Randy Carver</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<images>
+		<filename>images/sunrise_long.jpg</filename>
+	</images>
+	<css>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>

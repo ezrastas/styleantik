@@ -1,0 +1,51 @@
+#product_list div  { /*Оформление "квадрата" с информацией о товаре */
+overflow:hidden;
+margin-bottom:2em;
+padding-bottom:1em;;
+}
+
+
+
+#product_list div div div {
+	margin-left:90px;
+
+}
+
+
+
+#product_list div div div h3 {
+	left:-90px;
+
+}
+
+#product_list div div div h3 a{
+	margin-left:2em;
+}
+
+#product_list a img { /*Картинка товара*/
+	margin-top:40px;
+	margin-left:-85px;
+}
+#product_list div div div div{ /*div-ы : описание, цена, количество, рейтинг товара*/
+	margin-top:0;
+	margin-bottom:1em;
+	width:60% !important;
+}
+
+
+#product_list form {
+	height:7.5em;
+	margin-bottom:0.5em;
+	text-align:right;
+}
+
+#product_list div div div div input { /*Кнопка "Купить", т.к. нет конкретного идентификатора параметры задаются для всех элементов типа input*/
+	margin:0;
+	margin-left:-0.75em;
+	top:3em;
+
+}
+#product_list div div div div input.inputbox { /*Поле количества товара, переопределение параметров заданных для кнопки*/
+	margin:0;
+}
+

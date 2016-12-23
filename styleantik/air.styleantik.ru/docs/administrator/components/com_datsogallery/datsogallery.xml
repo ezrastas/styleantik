@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<mosinstall type="component">
+  <name>DatsoGallery</name>
+  <creationDate>10.05.2007</creationDate>
+  <author>Andrey Datso</author>
+  <copyright>Copyright 2006-2007 by Andrey Datso. Distribution prohibited!</copyright>
+  <authorEmail>admin@datso.fr</authorEmail>
+  <authorUrl>www.datso.fr</authorUrl>
+  <version>1.3.9.1</version>
+  <description>DatsoGallery Multilingual is a native Joomla! gallery component</description>
+  <files>
+    <filename>datsogallery.php</filename>
+    <filename>sub_slideshow.php</filename>
+    <filename>sub_commentpic.php</filename>
+    <filename>sub_deletecomment.php</filename>
+    <filename>sub_viewdetails.php</filename>
+    <filename>sub_votepic.php</filename>
+    <filename>sub_viewspecial.php</filename>
+	<filename>sub_window.js</filename>
+	<filename>sub_wm.php</filename>
+	<filename>watermark.png</filename>
+    <filename>language/russian.php</filename>
+    <filename>language/english.php</filename>
+    <filename>language/index.html</filename>
+	<filename>js/jfunctions.js</filename>
+	<filename>js/lightbox/index.html</filename>
+	<filename>js/lightbox/css/lightbox.css</filename>
+	<filename>js/lightbox/js/effects.js</filename>
+	<filename>js/lightbox/js/lightbox.js</filename>
+	<filename>js/lightbox/js/prototype.js</filename>
+	<filename>js/lightbox/js/scriptaculous.js</filename>
+	<filename>crypt/cryptographp.php</filename>
+	<filename>crypt/cryptographp.cfg.php</filename>
+	<filename>crypt/cryptographp.fct.php</filename>
+	<filename>crypt/cryptographp.inc.php</filename>
+	<filename>crypt/fonts/verdana.ttf</filename>
+	<filename>index.html</filename>
+    </files>
+  <images>
+    <filename>images/del.gif</filename>
+    <filename>images/home.gif</filename>
+    <filename>images/ip.gif</filename>
+    <filename>images/publish_x.png</filename>
+    <filename>images/tick.png</filename>
+    <filename>images/edit_trash.png</filename>
+    <filename>images/edit.png</filename>
+    <filename>images/download.gif</filename>
+    <filename>images/no_download.gif</filename>
+    <filename>images/datsogallery.png</filename>
+    <filename>images/dgcategory.png</filename>
+    <filename>images/dgcomment.png</filename>
+    <filename>images/dgconfig.png</filename>
+    <filename>images/dgimport.png</filename>
+    <filename>images/dgpics.png</filename>
+	<filename>images/dgreset.png</filename>
+    <filename>images/dgupload.png</filename>
+    <filename>images/dgzipupload.png</filename>
+    <filename>images/dgrebuild.png</filename>
+    <filename>images/blank.png</filename>
+	<filename>js/lightbox/images/blank.gif</filename>
+	<filename>js/lightbox/images/close.gif</filename>
+	<filename>js/lightbox/images/closelabel.gif</filename>
+	<filename>js/lightbox/images/loading.gif</filename>
+	<filename>js/lightbox/images/next.gif</filename>
+	<filename>js/lightbox/images/nextlabel.gif</filename>
+	<filename>js/lightbox/images/prev.gif</filename>
+	<filename>js/lightbox/images/prevlabel.gif</filename>
+	<filename>crypt/images/erreur1.png</filename>
+	<filename>crypt/images/erreur2.png</filename>
+	<filename>crypt/images/erreur3.png</filename>
+	<filename>crypt/images/reload.png</filename>
+	<filename>images/index.html</filename>
+  </images>
+  <install>
+    <queries>
+      <query>DROP TABLE IF EXISTS `#__datsogallery`</query>
+      <query>
+        CREATE TABLE `#__datsogallery` (
+          `id` int(11) NOT NULL auto_increment,
+          `catid` int(11) NOT NULL default '0',
+          `imgtitle` text NOT NULL,
+          `imgauthor` varchar(50) default NULL,
+          `imgtext` text NOT NULL,
+          `imgdate` varchar(20) default NULL,
+          `imgcounter` int(11) NOT NULL default '0',
+          `imgvotes` int(11) NOT NULL default '0',
+          `imgvotesum` int(11) NOT NULL default '0',
+          `published` tinyint(1) NOT NULL default '0',
+          `ordering` int(11) NOT NULL default '0',
+          `imgoriginalname` varchar(50) NOT NULL default '',
+          `imgfilename` varchar(50) NOT NULL default '',
+          `imgthumbname` varchar(50) NOT NULL default '',
+          `checked_out` int(11) NOT NULL default '0',
+          `owner` varchar(50) NOT NULL default '',
+          `approved` int(1) NOT NULL default '0',
+          `useruploaded` int(1) NOT NULL default '0',
+          PRIMARY KEY  (`id`)
+        ) TYPE=MyISAM;
+      </query>
+      <query>DROP TABLE IF EXISTS `#__datsogallery_comments`</query>
+      <query>
+        CREATE TABLE `#__datsogallery_comments` (
+          `cmtid` int(10) NOT NULL auto_increment,
+          `cmtpic` int(10) NOT NULL default '0',
+          `cmtip` varchar(15) NOT NULL default '',
+          `cmtname` varchar(20) NOT NULL default '',
+          `cmttext` text NOT NULL,
+          `cmtdate` varchar(20) default NULL,
+          `published` tinyint(1) NOT NULL default '0',
+          PRIMARY KEY  (`cmtid`)
+        ) TYPE=MyISAM;
+      </query>
+      <query>DROP TABLE IF EXISTS `#__datsogallery_catg`</query>
+      <query>
+        CREATE TABLE `#__datsogallery_catg` (
+          `cid` int(11) NOT NULL auto_increment,
+          `name` varchar(255) NOT NULL default '',
+          `parent` varchar(255) NOT NULL default '0',
+          `description` text,
+          `ordering` int(11) NOT NULL default '0',
+          `access` tinyint(3) unsigned NOT NULL default '0',
+          `published` char(1) NOT NULL default '0',
+          PRIMARY KEY  (`cid`)
+        ) TYPE=MyISAM;
+      </query>
+      <query>DROP TABLE IF EXISTS `#__datsogallery_votes`</query>
+      <query>
+        CREATE TABLE `#__datsogallery_votes` (
+          `vpic` int(11) NOT NULL default '0',
+          `vip` varchar(255) NOT NULL default '',
+          UNIQUE INDEX (vpic,vip)
+        ) TYPE=MyISAM;
+      </query>
+      <query>
+        INSERT INTO `#__datsogallery_catg` VALUES (1, 'Test category for your first pictures', '0', 'Test description for this category', 1, 0, '1');
+      </query>
+    </queries>
+  </install>
+  <uninstall>
+    <queries>
+      <query>DELETE FROM `#__datsogallery`</query>
+      <query>DROP TABLE `#__datsogallery`</query>
+      <query>DELETE FROM `#__datsogallery_comments`</query>
+      <query>DROP TABLE `#__datsogallery_comments`</query>
+      <query>DROP TABLE `#__datsogallery_catg`</query>
+      <query>DROP TABLE `#__datsogallery_votes`</query>
+      <query>DELETE FROM `#__menu` WHERE link='index.php?option=com_datsogallery';</query>
+    </queries>
+  </uninstall>
+    <installfile>install.datsogallery.php</installfile>
+    <uninstallfile>uninstall.datsogallery.php</uninstallfile>
+  <administration>
+    <menu>DatsoGallery</menu>
+    <submenu>
+      <menu act="pictures">Pictures</menu>
+      <menu act="showcatg">Categories</menu>
+      <menu act="comments">Comments</menu>
+      <menu act="upload">Normal Upload</menu>
+	  <menu act="batchupload">Batch Upload</menu>
+      <menu act="batchimport">Batch Import</menu>
+      <menu act="settings">Configuration</menu>
+      <menu act="resetvotes">Reset Votes</menu>
+      <menu act="rebuild">Thumb Rebuild</menu>
+    </submenu>
+    <files>
+      <filename>admin.datsogallery.html.php</filename>
+      <filename>admin.datsogallery.php</filename>
+      <filename>class.datsogallery.php</filename>
+      <filename>config.datsogallery.php</filename>
+      <filename>globals.datsogallery.php</filename>
+      <filename>images.datsogallery.php</filename>
+      <filename>update.datsogallery.php</filename>
+      <filename>install.datsogallery.php</filename>
+      <filename>toolbar.datsogallery.html.php</filename>
+      <filename>toolbar.datsogallery.php</filename>
+      <filename>uninstall.datsogallery.php</filename>
+      <filename>donation.htm</filename>
+    </files>
+    <images>
+    <filename>images/datso_logo.gif</filename>
+    <filename>images/rebuild.png</filename>
+    </images>
+</administration>
+</mosinstall>

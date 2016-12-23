@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template">
+<name>a1business</name>
+<creationDate>09/01/2004</creationDate>
+<author>Piksi</author>
+<copyright>This template is released under the GNU/GPL License - Copyright 2004 by Mambo Open Source</copyright>
+<authorEmail>piksi@vc-slo.com</authorEmail>
+<authorUrl>www.vc-slo.com</authorUrl>
+<version>1.0</version>
+<description>fixed width, business template</description>
+<files>
+<filename>index.php</filename>
+<filename>template_thumbnail.png</filename>
+<filename>js/JSCookMenu.js</filename>
+<filename>js/ThemeOffice/theme.js</filename>
+</files>
+<images>
+<filename>images/arrow.png</filename>
+<filename>images/ban.gif</filename>
+<filename>images/bg_1.gif</filename>
+<filename>images/bot.gif</filename>
+<filename>images/copy.gif</filename>
+<filename>images/e01.gif</filename>
+<filename>images/e02.gif</filename>
+<filename>images/e03.gif</filename>
+<filename>images/e04.gif</filename>
+<filename>images/fon01.gif</filename>
+<filename>images/fon02.gif</filename>
+<filename>images/fon03.gif</filename>
+<filename>images/fon04.gif</filename>
+<filename>images/fon05.gif</filename>
+<filename>images/fon06.gif</filename>
+<filename>images/fon_top.gif</filename>
+<filename>images/fon_top01.gif</filename>
+<filename>images/fon_top02.gif</filename>
+<filename>images/icon01.gif</filename>
+<filename>images/icon02.gif</filename>
+<filename>images/icon03.gif</filename>
+<filename>images/im.gif</filename>
+<filename>images/logo.gif</filename>
+<filename>images/main01.jpg</filename>
+<filename>images/main01b.jpg</filename>
+<filename>images/main02.jpg</filename>
+<filename>images/main03.jpg</filename>
+<filename>images/menulogo.gif</filename>
+<filename>images/px1.gif</filename>
+<filename>js/ThemeOffice/arrow.png</filename>
+<filename>js/ThemeOffice/darrow.png</filename>
+<filename>js/ThemeOffice/sections.png</filename>
+<filename>js/ThemeOffice/spacer.png</filename>
+<filename>js/ThemeOffice/blank.png</filename>
+</images>
+<css>
+<filename>css/template_css.css</filename>
+<filename>js/ThemeOffice/theme.css</filename>
+</css>
+</mosinstall>

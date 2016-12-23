@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Таблица - Ленты новостей из категории</name>
+	<group>Component</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>В виде таблицы показываются ленты новостей из определеной категории</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images" hide_default="1" default="" label="Изображение меню" description="A small image to be placed to the left or right of your menu item, images must be in /images" />
+		<param name="pageclass_sfx" type="text" default="" label="Суффикс CSS-класса страницы" description="Суффикс CSS-класса, используемого на этой странице. Необходим для использования индивидуального стиля страницы" />
+		<param name="back_button" type="list" default="" label="Кнопка Назад (Вернуться)" description="Показать/Скрыть кнопку Назад (Вернуться), возвращающую на предыдущую просмотренную страницу">
+			<option value="">Исп. ОБЩИЕ настройки</option>
+			<option value="0">Скрыть</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Заголовок страницы" description="Показать/Скрыть заголовок страницы">
+			<option value="0">Скрыть</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Заголовок страницы" description="Текст, отображаемый вверху страницы. Если не будет заполнено, то будет взамен будет использоваться название меню" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="headings" type="radio" default="1" label="Заголовки таблиц" description="Показать/Скрыть заголовки таблиц">
+			<option value="0">Скрыть</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="name" type="radio" default="1" label="Столбец Название" description="Показать/Скрыть столбец Название">
+			<option value="0">Скрыть</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="articles" type="radio" default="1" label="Столбец Статьи" description="Показать/Скрыть столбец количества статей">
+			<option value="0">Скрыть</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="link" type="radio" default="0" label="Столбец Ссылка" description="Показать/Скрыть столбец со ссылкой на ленту новостей">
+			<option value="0">Скрыть</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat" type="radio" default="1" label="Другие категории" description="При просмотре категории, Показать/Скрыть список других категорий">
+			<option value="0">Скрыть</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="cat_description" type="radio" default="1" label="Описание категории" description="Показать/Скрыть описание для списка категорий">
+			<option value="0">Скрыть</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="cat_items" type="radio" default="1" label="Кол-во объектов категории" description="Показать/Скрыть число объектов каждой категории">
+			<option value="0">Скрыть</option>
+			<option value="1">Показать</option>
+		</param>
+	</params>
+</mosinstall>

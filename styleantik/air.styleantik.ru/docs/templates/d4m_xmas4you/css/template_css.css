@@ -1,0 +1,492 @@
+/* STANDARD CSS TAG SET FOR MAMBO 4.5.X TEMPLATE SYSTEM */
+/* By Design For Mambo (C) http://www.designformambo.com - Mambo custom design and development */
+
+
+/* COMMON TAGS */
+body {
+	background: #A60000 url(../images/body_bg.gif) scroll;
+}
+
+p, td, tr {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+
+h1 {
+	font-size:160%;
+}
+h2 {
+	font-size:140%;
+}
+h3 {
+	font-size:120%;
+}
+h4 {
+	font-size:110%;
+}
+
+hr {
+}
+
+ul {
+	margin-left: 10px;
+	padding-left: 10px;
+	list-style-image:url(../images/list_bullet.gif);
+}
+
+li{
+	margin: 2px;
+}
+
+
+/* LINKS */
+
+/* Common links */
+a:link, a:visited {
+	color: #666666;
+	text-decoration:underline;
+}
+a:hover {
+	color: #650000;
+}
+
+/* Read more */
+a.readon:link, a.readon:visited {
+	color: #650000;
+	font-size: 90%;
+	font-weight: bold;
+	padding: 2px;
+	text-decoration:none;
+	width: 100%;
+	text-align:right;
+}
+a.readon:hover {
+	color: #650000;
+	text-decoration: underline;
+}
+
+
+/* MENU LINKS */
+
+/* Main level */
+#active_menu {
+	color: #000000;
+	padding-left: 5px;
+	background:url(../images/mainlevel_over.gif) no-repeat;
+}
+
+a.mainlevel:link,
+a.mainlevel:visited
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 90%;
+	color: #595959;
+	text-decoration:none;
+	line-height: 25px;
+	display:block;
+	padding-left: 3px;
+	border-bottom: #DCD5C2 solid 1px;
+}
+
+a.mainlevel:hover
+{
+	color: #000000;
+	padding-left: 5px;
+	background:url(../images/mainlevel_over.gif) no-repeat;
+}
+
+/* Sub level */
+a.sublevel:link,
+a.sublevel:visited
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	color: #595959;
+	text-decoration:none;
+	padding: 3px;
+}
+a.sublevel:hover {
+	color: #000000;
+	padding-left: 5px;
+	background:url(../images/sublevel_over.gif) no-repeat;
+}
+
+
+/* FORMS */
+div.search {
+	text-align:right;
+	vertical-align:middle;
+}
+input.button {
+	font-size: 90%;
+	color: #ffffff;
+	border: 1px solid #CCCCCC;
+	font-weight:bold;
+	height: 18px;
+	padding: 0px 5px;
+	background: #650000 url(../images/button_bg.gif);
+}
+input.inputbox {
+	font-size: 90%;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	height: 20px;
+	padding: 0px 2px;
+}
+
+
+/* NAV BARS */
+/* Path way */
+span.pathway {
+}
+a.pathway:link, a.pathway:visited {
+}
+a.pathway:hover {
+}
+
+/* Page nav of blog pages */
+span.pagenav { /* When not a link */
+	padding: 2px 6px;
+	color: #bfbfbf;
+	font-size: 90%;
+	font-weight: bold;
+	margin-top: 5px;
+}
+a.pagenav:link, a.pagenav:visited { /* When become a link */
+	padding: 2px 6px;
+	font-size: 90%;
+	font-weight: bold;
+	margin-top: 5px;
+	text-decoration:none;
+	color: #666666;
+}
+a.pagenav:hover {
+	color: #650000;
+}
+
+/* Nav bar of article's pages */
+div.pagenavbar { /* when not a link */
+	font-size: 90%;
+	font-weight: bold;
+	margin: 5px;
+	color: #bfbfbf;
+}
+div.pagenavbar a:link, div.pagenavbar a:visited { /* When become a link */
+	color: #666666;
+	padding: 3px 6px;
+	text-decoration: none;
+}
+div.pagenavbar a:hover {
+	color: #650000;
+}
+
+/* Back button */
+div.back_button {
+	margin: 5px 0px;
+}
+div.back_button a:link, div.back_button a:visited{
+	font-weight: bold;
+	color: #808080;
+	padding: 3px;
+	text-decoration: none;
+}
+div.back_button a:hover{
+	color: #650000;
+}
+
+
+/* Nav bar of articles */
+th.pagenav_prev, th.pagenav_next {
+	font-size: 90%;
+	font-weight: bold;
+}
+th.pagenav_prev a:link, th.pagenav_prev a:visited {
+	padding: 2px 12px;
+	text-decoration:none;
+	color: #666666;
+}
+th.pagenav_next a:link, th.pagenav_next a:visited {
+	padding: 2px 12px;
+	text-decoration:none;
+	color: #666666;
+}
+th.pagenav_prev a:hover, th.pagenav_next a:hover {
+	color: #650000;
+}
+
+/* More block */
+div.blog_more {
+	border: #dadfe5 1px solid;
+	padding: 5px;
+}
+div.blog_more div { /* "More..." text */
+	border-bottom: #d9d9d9 1px solid;
+	padding: 3px;
+}
+div.blog_more ul{
+	list-style:url(../images/icon_morelink.gif);
+}
+div.blog_more li{
+}
+a.blogsection:link,
+a.blogsection:visited
+{
+	text-decoration:none;
+}
+a.blogsection:hover {
+	text-decoration: underline;
+}
+
+/* Article block */
+div.componentheading,
+td.contentheading
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	font-weight:bold;
+	color: #000000;
+}
+td.createdate,
+td.modifydate
+{
+	font-size: 70%;
+}
+table.contentpane {
+	
+}
+table.contentpaneopen td{
+	margin: 0px;
+}
+
+table.blog{ /* Blog page */
+}
+table.blog td{
+	padding: 4px 2px;
+}
+
+a.contentpagetitle:link,
+a.contentpagetitle:visited
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight:bold;
+	color: #650000;
+	text-decoration:none;
+}
+a.contentpagetitle:hover {
+	text-decoration:underline;
+}
+
+
+/* Data & written by block */
+td.createdate, td.modifydate {
+	color:#999999;
+	font-size:90%;
+}
+span.small {
+	color:#676767;
+	font-size: 100%;
+}
+span.highlight {
+	background: #ffff80;
+	padding: 4px;
+}
+div.pagenavcounter {
+	font-size: 90%;
+	font-weight:bold;
+	margin-bottom: 8px;
+}
+
+
+/* Table of content */
+table.contenttoc {
+	padding: 5px;
+	margin: 2px 2px 8px 8px;
+	border: 1px solid #c1c1c1;
+}
+table.contenttoc td {
+	padding: 5px;
+}
+table.contenttoc th {
+	padding: 4px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+a.toclink:link, a.toclink:visited {
+	color:#666666;
+	font-size: 90%;
+	text-decoration:none;
+}
+a.toclink:hover {
+	color:#000000;
+	text-decoration:underline;
+}
+
+/* Section description block */
+td.contentdescription {
+}
+
+/* Mambo module table  */
+table.moduletable {
+	width: 100%;
+}
+table.moduletable th {
+	background:url(../images/module_trees.gif) no-repeat left;
+	text-align:left;
+	font-weight:bold;
+	font-size: 110%;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	border-bottom: #bfbfbf 1px solid;
+	padding: 0px 10px 2px 30px;
+	height: 28px;
+	vertical-align:bottom;
+}
+table.moduletable td {
+	padding: 2px;
+}
+
+
+/* Polls */
+td.poll {/* question text */
+	font-size: 100%;	
+}
+table.pollstableborder { /* table with answers & polls result table*/
+}
+table.pollstableborder td{
+	padding: 2px;
+	font-size: 90%;
+	vertical-align: middle;
+}
+.smalldark {
+	
+}/* Stat text at the end of polls resulte table " Number of Voters".. */
+
+
+/* links table and polls result table */
+td.sectiontableheader { /* header bar */
+	font-weight: bold;
+	font-size: 110%;
+	background: #650000;
+	color: #ffffff;
+	text-transform:uppercase;
+	padding: 4px;
+}
+tr.sectiontableentry1 { /* content bar 1 */
+	padding: 4px;
+	background: #f2f2f2;
+}
+tr.sectiontableentry2 { /* content bar 2 */
+	padding: 4px;
+}
+a.category:link, a.category:visited {
+	color: #404040;
+	font-weight:bold;
+	text-decoration:none;
+}
+a.category:hover {
+	text-decoration:underline;
+}
+
+
+/* Latest news module output */
+ul.latestnews {
+}
+li.latestnews {
+}
+a.latestnews:link, a.latestnews:visited {
+	text-decoration:none;
+}
+a.latestnews:hover {
+	text-decoration:underline;
+}
+
+/* Popular module output */
+ul.mostread{
+}
+a.mostread:link, a.mostread:visited {
+	text-decoration:none;
+}
+a.mostread:hover {
+	text-decoration:underline;
+}
+
+
+/* CUSTOM */
+#vdiv{
+	width: 11px;
+	background: url(../images/v_div.gif) repeat-y center;
+}
+
+#vdotdiv{
+	width: 11px;
+	background: url(../images/v_dotdiv.gif) repeat-y center;
+}
+
+#hdiv{
+	height: 11px;
+	background: url(../images/h_div.gif) repeat-x center;
+}
+
+#hdotdiv{
+	height: 11px;
+	background: url(../images/h_dotdiv.gif) repeat-x center;
+}
+
+#main_table{
+	border: #650000 solid 5px outset;
+}
+
+#main_column{
+	vertical-align: top;
+	width: auto;
+	background: #EEEBDD url(../images/mainpart_bg.gif) repeat-y;
+}
+
+#left_column{
+	vertical-align: top;
+	width: 201px;
+	background: #E2DAC4 url(../images/leftpart_bg.gif) repeat-y;
+}
+
+#left div.moduletable {
+	margin-bottom: 10px;
+	background:url(../images/moduletable_bg.gif) no-repeat left top;
+	padding: 15px 10px 10px 15px;
+}
+
+#left div.moduletable_mainmenu {
+	margin-bottom: 10px;
+	padding: 8px;
+}
+
+#left div.moduletable h3 {
+	padding-bottom: 10px;
+	margin: 0px;
+	color: #650000;
+}
+
+#mainbody{
+	vertical-align:top;
+}
+
+#pathway {
+	height: 35px;
+	background: url(../images/pathway_trees.gif) right no-repeat;
+	border-bottom: #71706F 2px solid;
+	vertical-align:bottom;
+	padding-bottom: 2px;
+}
+
+td.module_container:hover {
+	border: 1px solid #ff0000;
+}
+
+#copyright{
+	font-size: 80%;
+	color:#ffffff;
+	text-align:center;
+	padding: 10px;
+	width: 100%;
+}

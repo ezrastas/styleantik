@@ -1,0 +1,261 @@
+######################################################################
+#                    MAIN CONFIGURATION SETTINGS                     #
+######################################################################
+
+LOCAL_IP = 10.1.152.147
+HOSTNAME = web1131.nic.ru
+FERM_RELAY = 10.1.83.250
+
+local_interfaces = LOCAL_IP
+primary_hostname = HOSTNAME
+domainlist local_domains = @
+domainlist relay_to_domains =
+hostlist   relay_from_hosts = FERM_RELAY : LOCAL_IP : localhost
+hostlist relay_from_local_ips = 10.1.0.0/16 : 194.85.89.0/24 : 194.85.90.0/23 : 194.85.92.0/23
+
+exim_user = mail
+
+acl_smtp_rcpt = acl_check_rcpt
+
+qualify_domain = HOSTNAME
+# qualify_recipient =
+# allow_domain_literals
+never_users = root
+# host_lookup = *
+rfc1413_hosts = *
+rfc1413_query_timeout = 30s
+# sender_unqualified_hosts =
+recipient_unqualified_hosts = FERM_RELAY
+# percent_hack_domains =
+
+ignore_bounce_errors_after = 0d
+timeout_frozen_after = 7d
+log_selector = +smtp_confirmation
+
+#VERIFY_SENDER = * ${lookup{$local_part@$domain}lsearch{/etc/mail/verify_sender.conf}{$value}fail} frs
+#VERIFY_RECIPIENT = * ${lookup{$original_local_part@$original_domain}lsearch{/etc/mail/verify_recipient.conf}{}{postmaster@$sender_ident.nichost.ru}} frs
+
+######################################################################
+#                   PERFORMANCE CONFIGURATION                        #
+######################################################################
+
+queue_run_max = 2
+remote_max_parallel = 2
+queue_only_load = 100.0
+deliver_queue_load_max = 100.0
+message_size_limit = 30M
+recipients_max = 25
+received_headers_max = 20
+
+######################################################################
+#                       ACL CONFIGURATION                            #
+#         Specifies access control lists for incoming SMTP mail      #
+######################################################################
+
+begin acl
+
+acl_check_rcpt:
+#  accept  hosts = :
+
+  deny    message       = Restricted characters in address
+          domains       = +local_domains
+          local_parts   = ^[.] : ^.*[@%!/|]
+
+  deny    message       = Restricted characters in address
+          domains       = !+local_domains
+          local_parts   = ^[./|] : ^.*[@%!] : ^.*/\\.\\./
+
+  accept  local_parts   = postmaster
+          domains       = +local_domains
+
+#  deny    local_parts   = lsearch;/etc/cgi-mail.users
+#          message       = mail blocked for this account
+
+  accept  domains       = +local_domains
+          endpass
+          verify        = recipient
+
+  accept  domains       = +relay_to_domains
+          endpass
+          verify        = recipient
+
+#  accept  verify       = sender
+
+  # If control reaches this point, the domain is neither in +local_domains
+  # nor in +relay_to_domains.
+
+  deny    message       = No mail from $sender_host_address will be accepted
+          hosts         = !+relay_from_hosts
+
+  # Accept if the message arrived over an authenticated connection, from
+  # any host. Again, these messages are usually from MUAs, so recipient
+  # verification is omitted.
+
+#  accept  authenticated = *
+
+  # Reaching the end of the ACL causes a "deny", but we might as well give
+  # an explicit message.
+
+  deny    message       = relay not permitted
+
+######################################################################
+#                      ROUTERS CONFIGURATION                         #
+#               Specifies how addresses are handled                  #
+######################################################################
+#     THE ORDER IN WHICH THE ROUTERS ARE DEFINED IS IMPORTANT!       #
+# An address is passed to each router in turn until it is accepted.  #
+######################################################################
+
+begin routers
+
+# domain_literal:
+#   driver = ipliteral
+#   domains = ! +local_domains
+#   transport = remote_smtp
+
+
+#dnslookup:
+#  driver = dnslookup
+#  domains = ! +local_domains
+#  transport = remote_smtp
+#  ignore_target_hosts = 0.0.0.0 : 127.0.0.0/8
+#  no_more
+
+#check_outgoing:
+#  driver = redirect
+#  senders = ! : lsearch;/etc/cgi-mail.users
+#  allow_fail
+#  data = :fail: you are not allowed to send messages
+
+external:
+  driver = manualroute
+  domains = ! +local_domains
+  transport = remote_smtp
+  route_data = FERM_RELAY
+  no_more
+
+# The remaining routers handle addresses in the local domain(s).
+
+system_aliases:
+  driver = redirect
+  allow_fail
+  allow_defer
+  data = ${lookup{$local_part}lsearch{/etc/aliases}}
+# user = exim
+  file_transport = address_file
+  pipe_transport = address_pipe
+
+userforward:
+  driver = redirect
+  check_local_user
+# local_part_suffix = +* : -*
+# local_part_suffix_optional
+  file = $home/.forward
+# allow_filter
+  no_verify
+  no_expn
+  check_ancestor
+  file_transport = address_file
+  pipe_transport = address_pipe
+  reply_transport = address_reply
+
+localuser:
+  driver = accept
+  check_local_user
+# local_part_suffix = +* : -*
+# local_part_suffix_optional
+  transport = local_delivery
+  cannot_route_message = Unknown user
+
+
+######################################################################
+#                      TRANSPORTS CONFIGURATION                      #
+######################################################################
+#                       ORDER DOES NOT MATTER                        #
+#     Only one appropriate transport is called for each delivery.    #
+######################################################################
+
+begin transports
+
+remote_smtp:
+  driver = smtp
+#  headers_remove = "Sender"
+  interface = LOCAL_IP
+#  headers_rewrite = VERIFY_SENDER : VERIFY_RECIPIENT
+  max_rcpt = 1
+
+local_delivery:
+  driver = appendfile
+#  file = /var/mail/$local_part
+  file = /dev/null
+#  delivery_date_add
+#  envelope_to_add
+#  return_path_add
+# group = mail
+# mode = 0660
+
+address_pipe:
+  driver = pipe
+  return_output
+
+address_file:
+  driver = appendfile
+  delivery_date_add
+  envelope_to_add
+  return_path_add
+
+address_reply:
+  driver = autoreply
+
+######################################################################
+#                      RETRY CONFIGURATION                           #
+######################################################################
+
+begin retry
+
+# This single retry rule applies to all domains and all errors. It specifies
+# retries every 15 minutes for 2 hours, then increasing retry intervals,
+# starting at 1 hour and increasing each time by a factor of 1.5, up to 16
+# hours, then retries every 6 hours until 4 days have passed since the first
+# failed delivery.
+
+# Address or Domain    Error       Retries
+# -----------------    -----       -------
+
+*                      *           F,2h,5m; G,16h,1h,1.5; F,7d,6h
+
+
+######################################################################
+#                      REWRITE CONFIGURATION                         #
+######################################################################
+
+begin rewrite
+
+#root@HOSTNAME postmaster@nicservice.ru Ffrs
+#*@HOSTNAME postmaster@$1.nichost.ru Ffrs
+*@HOSTNAME postmaster@$1.nichost.ru Ffsr
+#.include /etc/mail/out.conf
+
+######################################################################
+#                   AUTHENTICATION CONFIGURATION                     #
+######################################################################
+
+# There are no authenticator specifications in this default configuration file.
+
+begin authenticators
+
+
+######################################################################
+#                   CONFIGURATION FOR local_scan()                   #
+######################################################################
+
+# If you have built Exim to include a local_scan() function that contains
+# tables for private options, you can define those options here. Remember to
+# uncomment the "begin" line. It is commented by default because it provokes
+# an error with Exim binaries that are not built with LOCAL_SCAN_HAS_OPTIONS
+# set in the Local/Makefile.
+
+# begin local_scan
+
+
+# End of Exim configuration file

@@ -1,0 +1,752 @@
+/**
+author: raduga http://mambasana.ru
+**/
+
+/**#################### DEFAULT and FORMS CSS ####################**/
+
+body,html {
+  padding          : #6a1029;
+  margin           : #6a1029;
+  margin-bottom           : 15px;
+           }
+
+td, tr, p, div {
+  font-family      :  Arial, Helvetica, sans-serif;
+  color            : #feae01;
+  font-size        : 13px;
+  line-height      : 16px;
+}
+
+hr {
+  color            : #feae01;
+  height           : 1px;
+  width            : 100%;
+}
+
+a:link, a:visited {
+  color            : #feae01;
+  text-decoration  : underline;
+ }
+
+a:hover {
+  color            : #feae01;
+  text-decoration  : underline;
+  }
+
+ul {
+  margin           : 2px;
+  padding-left     : 10px;
+  list-style       : none;
+}
+
+li {  
+  line-height      : 14px;
+  padding-left     : 14px;
+  padding-top      : 2px;
+  background-image : url(../images/arrow.png) ;
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
+}
+
+
+form {
+margin           : 0; 
+padding          : 0;
+}
+
+.inputbox {
+ color        : #feae01;
+ background   : #6a1029;
+ border       : 1px solid #feae01;
+ margin       : 3px 0;
+
+}
+
+input:hover,
+  input:focus,
+  textarea:hover,
+  textarea:focus {
+  color: #feae01;
+  background: #47101f;
+  
+}
+
+
+
+form select.button{
+ color        : #feae01;
+ background   : #6a1029;
+}
+
+option {
+background   : #6a1029;
+}
+
+/**#################### Joomla CSS ####################**/
+
+/** Buttons **/
+
+.back_button {
+  font-size        : 12px;
+  font-weight      : normal;
+  padding-bottom   : 3px;
+  margin-right     : 4px;
+  float            : right;
+  line-height      : 20px;
+    
+  }
+div.back_button a{
+text-decoration  : none;
+  }
+
+
+.button {
+  font-size        : 11px;
+  color            : #feae01;
+  border           : 1px solid #feae01;
+  margin           : 3px 0;
+  padding          : 2px;
+  cursor           : pointer;
+  background       : #47101f;
+}
+
+
+/** Contact **/
+
+.contact_email  {
+  width            : 100%;
+}
+
+.contact_email .inputbox {
+}
+
+
+
+/** Module table  **/
+
+
+table.moduletable {
+	margin           : 0 0 8px 0;
+      width            : 100%;
+      	}
+
+table.moduletable th {
+      
+    font-family          : Arial, Verdana,  Helvetica, sans-serif;
+	font-size          : 14px;
+	font-weight        : bold;
+	text-align         : center;
+	width              : 100%;
+      color              : #feae01;
+	padding            : 2px;
+      line-height        : 25px;
+      border-bottom: 1px solid #feae01;
+	height: 29px;    
+	}
+
+table.moduletable td {
+    padding-top: 2px;
+    	}
+
+
+
+div.module{
+    text-align: left;
+    margin           : 0 0 20px 0;
+    	}
+
+div.module h3 {
+      
+      font-family        : Arial, Verdana,  Helvetica, sans-serif;
+	font-size          : 14px;
+	font-weight        : bold;
+	text-align         : center;
+	width              : 100%;
+      color              : #feae01;
+	line-height        : 27px;
+	border-bottom: 1px solid #feae01;
+      height             : 29px;
+      margin             : 0 0 15px 0;
+       }
+
+
+
+.contentmod {
+text-align   : left;
+padding      : 8px 0;
+
+}
+
+.contentmod td {
+padding      : 5px;
+}
+
+.contentmod table.moduletable {
+margin           : 0 0 8px 0;
+width            : 100%;
+background       :  #feae01;
+}
+
+
+.contentmod table.moduletable th{
+      font-size          : 14px;
+	font-weight        : bold;
+	text-align         : right;
+	width              : 100%;
+      color              : #feae01;
+	padding            : 2px 10px;
+      line-height        : 25px;
+      background       : url(../images/corner_content.gif) #47101f no-repeat top right;
+      border-bottom: 1px solid #feae01;
+}
+
+
+
+/** Read more **/
+
+a.readon:link, a.readon:visited {
+  color            : #feae01;
+  font-size        : 12px;
+  white-space      : normal;
+  font-weight      : normal;
+  padding          : 1px 0px 1px 10px;
+  float            : right;
+  line-height      : 15px;
+  text-decoration  : none;
+  border-left:2px solid #feae01;
+  
+}
+a.readon:hover {
+  color            : #feae01;
+  font-size        : 12px;
+  white-space      : normal;
+  font-weight      : normal;
+  padding          : 1px 0 1px 10px;
+  line-height      : 15px;
+  text-decoration  : none;
+  border-left      : 2px solid #feae01;
+ }
+
+
+
+
+/** Pagenavigation **/
+
+.pagenavcounter {
+  font-size        : 11px;
+  color            : #6a1029;
+}
+
+.pagenavbar {
+  border-top      : 1px solid #feae01;
+  margin          : 10px 0;
+  padding-top     : 5px;
+  }
+
+.pagenav, .pagenav_prev, .pagenav_next {
+  font-weight      : normal;
+  }
+
+a.pagenav:link, a.pagenav:visited {
+  font-size        : 12px;
+  text-decoration  : none;
+  font-weight      : normal;
+}
+
+a.pagenav:hover {
+  font-size        : 12px;
+  text-decoration  : none;
+  font-weight      : normal;
+}
+
+table.contenttoc {
+  border           : 1px solid #feae01;
+  background       : #6a1029;
+  padding          : 0;
+  margin-left      : 2px;
+  margin-bottom    : 2px;
+}
+
+table.contenttoc th{
+  margin           : 0;
+  padding          : 2px;
+  background       : #6a1029 ;
+  color            : #feae01;
+ }
+table.contenttoc td{
+ margin           : 0;
+ padding          : 3px 4px;
+ border-bottom    : 1px solid #feae01;
+ background-image   : url(../images/arrow.png) ;
+ background-repeat  : no-repeat;
+ background-position: 4px 7px;
+   }
+
+
+table.contenttoc td a:link, table.contenttoc td a:visited{
+padding-left        : 12px !important;
+padding-left        : 0;
+text-indent         : 12px;
+text-decoration      : none;
+
+}
+table.contenttoc td a:hover{
+color     : #feae01;
+}
+
+/** Content **/
+
+
+.sectiontableheader {
+  
+  font-weight      : bold;
+  letter-spacing   : 1px;
+  color            : #feae01;
+  background       : #6a1029; 
+  padding          : 3px 5px;
+  border           : 1px solid #feae01;
+}
+
+
+.sectiontableentry1 {
+  vertical-align   : top;
+  background       : #6a1029;
+  border-bottom    : 1px solid #feae01;
+  line-height      : 20px;
+
+}
+
+.sectiontableentry1 td, .sectiontableentry2 td{
+  padding          : 2px 5px;
+  border-bottom    : 1px solid #feae01;
+  line-height      : 20px;
+
+}
+
+.sectiontableentry2 {
+  vertical-align   : top;
+  border-bottom    : 1px solid #feae01;
+  background       : #6a1029;
+  line-height      : 20px;
+}
+.sectiontableentry1 img{
+margin: 2px;
+}
+.sectiontableentry2 img{
+margin: 2px;
+}
+
+
+a.category:link, a.category:visited {
+  font-size        : 12px;
+  font-weight      : normal;
+  padding: 5px;
+}
+
+
+.small {
+  font-size        : 11px;
+  color            : #6a1029;
+}
+.smalldark {
+  font-size        : 11px;
+  color            : #6a1029;
+}
+.createdate, .modifydate {
+  font-size        : 11px;
+  color            : #6a1029;
+  font-weight      : normal;
+  text-align       : left;
+  width            : 100%;
+}
+.content_vote {
+  font-size        : 11px;
+  height           : 22px;
+  padding          : 2px 0;
+  }
+.content_rating {
+  font-size        : 11px;
+  color            : #6a1029;
+}
+
+table.content{
+  width            : 100%;
+  padding          : 0;
+  border-collapse  : collapse;
+  border-spacing   : 0;
+  margin-bottom    : 10px;
+}
+
+table.contentpane {
+  width            : 100%;
+  border-spacing   : 0;
+  padding-left     : 5px;
+  padding-right    : 5px;
+  margin-bottom    : 5px;
+}
+table.contentpaneopen {
+  width            : 100%;
+  border-spacing   : 0;
+  padding-left     : 5px;
+  padding-right    : 5px;
+  margin-bottom    : 5px;
+}
+
+.contentheading {
+  font-family      : Arial, Verdana, Helvetica, sans-serif;
+  width            : 100%;
+  font-size        : 16px;
+  font-weight      : bold;
+  line-height      : 21px;
+  text-align       : left;
+  text-indent      : 0;
+  color            : #feae01;
+  padding          : 3px 5px;
+  margin           : 3px 0;
+  background       : url(../images/corner_content.gif) #47101f no-repeat top right;
+  
+  }
+.contentheading a {
+text-decoration:none;
+}
+.componentheading {
+  font-family      : Arial, Verdana, Helvetica, sans-serif;
+  width            : auto;
+  font-size        : 17px;
+  font-weight      : bold;
+  line-height      : 21px;
+  text-transform   : uppercase;
+  text-align       : left;
+  color            : #feae01;
+  padding          : 3px;
+  margin           : 5px !important;
+  margin           : 5px 1px;
+  background       : url(../images/corner_content.gif) #47101f no-repeat top right;
+  }
+
+
+
+.contentdescription { 
+  width          : auto !important;
+  margin         : 0;
+  padding        : 0;
+  padding-top    : 5px;
+  text-align     : left;
+}
+
+ .blog_more {
+margin   : 10px 0 7px 7px;
+}
+
+.buttonheading {
+padding  : 0 2px;
+}
+
+.blog {
+width:100%;
+}
+
+.article_seperator{
+display: block;
+width: 100%;
+height: 20px;
+background: url(../images/separator.gif) no-repeat 50% 30%;
+}
+
+.moduletable .article_seperator{
+background     : none;
+height         : 3px;
+}
+
+
+
+/** Polls **/
+
+
+.poll {
+	line-height : 13px;
+	font-weight : normal;
+      text-align  : left;
+}
+table.poll td{
+	font-weight : normal;
+      text-align  : left;
+}
+
+.pollstableborder{
+  border-color     : #6a1029;
+  }
+
+/** CSS for Mainmenu **/
+
+a.mainlevel  {
+ display           : block;
+ width             : auto !important;
+ width             : 100%;
+  margin           : 1px 0;
+  padding          : 0;
+  font-size        : 12px;
+  background       : none;
+  
+}
+
+a.mainlevel:link, a.mainlevel:visited {
+  display          : block;
+  font-size        : 14px;
+  border-bottom    : 1px solid #feae01;
+  font-weight      : normal;
+  padding          : 2px 0;
+  color            : #feae01;
+  padding-left     : 10px;
+  text-decoration    : none;
+
+}
+a.mainlevel:hover {
+  border-bottom    : 1px solid #feae01;
+  font-size        : 14px;
+  font-weight      : normal;
+  color            : #6a1029;
+  text-decoration  : none;
+  padding-left     : 10px;
+  text-decoration	 : none;
+  background       : #6a1029;
+
+}
+#active_menu {
+  color            : #feae01;
+  border-bottom    : 1px solid #feae01;
+  background       : url(../images/menu.gif) #6a1029 96% 50% no-repeat;
+  text-decoration	 : none;
+
+}
+a#active_menu:hover {
+  color            : #6a1029;
+  border-bottom    : 1px solid #feae01;
+}
+
+ul#mainlevel{
+ display           : block;
+ width             : auto;
+ background       : none;
+ margin           : 0;
+ padding         : 0; 
+ list-style: none;
+ text-align:left;
+}
+ul#mainlevel li{
+ display           : block;
+ width             : auto;
+ background       : none;
+ background-image : none;
+ margin           : 0;
+ padding         : 0;
+ line-height      : 16px;
+ text-align:left;
+}
+
+
+/** Sublevel for Mainmenu **/
+
+.sublevel {
+   font-family      : Arial, Helvetica, sans-serif;
+   color            : #feae01;
+   padding    	  : 3px 1px 3px 5px;
+   margin		  : 3px;
+}
+a.sublevel:link, a.sublevel:visited {
+  color	      : #feae01;
+  text-decoration	: none;
+  line-height      : 20px;
+}
+a.sublevel:hover {
+  color            : #feae01;
+  text-decoration  : none;
+}
+a.sublevel#active_menu  {
+	background      : transparent;
+	color           : #feae01;
+	border          : 0;
+      
+}
+
+
+
+/** Topmenu styles for BOTTOM navigation (Position User3)**/
+
+ul#mainlevel-nav {
+  list-style       : none;
+  padding-right    : 20px;
+  margin           : 0;
+     
+}
+
+#mainlevel-nav li {
+  float            : right;
+  display          : block;
+  list-style       : none;
+  background-image : none;
+  padding          : 0;
+  margin           : 0;
+  width            : auto !important;
+  font-size        : 13px;
+  line-height      : 28px;
+  white-space      : nowrap;
+  
+
+}
+#mainlevel-nav li a {
+  display          : block;
+  padding-left     : 10px;
+  padding-right    : 0;
+  font-size        : 13px;
+  color            : #feae01;
+  text-decoration  : underline;
+  
+}
+
+#mainlevel-nav li a:hover {
+  display          : block;
+  font-size        : 13px;
+  color            : #feae01;
+    
+}
+
+
+
+/** images **/
+
+.mosimage {
+  border     : 1px solid #feae01;
+  margin     : 5px;
+  padding-top:  3px;
+
+}
+
+.mosimage_caption {
+  margin-top: 3px;
+  padding   :  2px;
+  color     : #feae01;
+  font-size : 10px;
+  background: #6a1029;
+}
+
+
+/** #################### index.php #################### **/
+
+#body {
+background:#6a1029;
+}
+
+.main { 
+  text-align       : left; 
+  width            : 100%;
+ }
+
+div.mod {
+  background       : none;
+  width            : 6px;
+}
+
+
+#centertb {
+
+}
+
+#contenttb{
+padding          : 0;
+background       : url(../images/shadow.gif) #47101f repeat-y top left;
+border-right     : 1px solid #feae01;
+
+}
+#contenttb td.contentmod{
+padding   : 10px;
+
+} 
+  
+
+.footer_right {
+  width            : 550px; 
+  float            : right;
+  font-size        : 12px;
+  font-weight      : normal;
+  text-align       : right;
+     
+ }
+
+.footer_right p{
+padding-right    : 20px;
+color            : #feae01;
+}
+
+
+.leftcol {
+      
+    background      : url(../images/mod_left.jpg) #3b0d1a repeat-y top left;
+
+}
+
+.leftcol #leftmod{
+   vertical-align   : top;
+   padding          : 10px;
+   padding-bottom   : 150px;
+   text-align       : left;
+   width            : 200px;
+   background       : url(../images/corner.gif) no-repeat top right;
+
+}
+
+
+.leftcol div{ 
+
+}
+
+.foot {
+  height           : 57px;
+  background       : url(../images/footer.gif) repeat-x top left;
+  width            : 900px;
+  margin           : 0 auto;
+}
+
+
+#logo {
+  background     : url(../images/logo.gif) no-repeat 50% 50%;
+  height         : 66px;
+  width          : 100%;
+  padding:0;
+    }
+#light {
+  background     : url(../images/light.jpg) #6a1029 no-repeat top right;
+  height         : 66px;
+  width          : 100%;
+  padding:0;
+    }
+
+#header {
+  background     : url(../images/city.jpg) no-repeat top left;
+  height         : 223px;
+  padding:0;
+    }
+
+#left_bottom{
+position      : absolute;
+left          : 62px;
+bottom        :0;
+background    :url(../images/man.gif) no-repeat;
+width         : 80px;
+height        : 198px;
+}
+
+#outconteiner2{
+position    :relative;
+text-align  : center;
+width       : 900px;
+margin      : 0px auto; 
+
+}
+#outconteiner1{
+text-align  : center;
+}
+
+table.adminform, #images-page, #publish-page, #meta-page{
+background: #47101f;
+}

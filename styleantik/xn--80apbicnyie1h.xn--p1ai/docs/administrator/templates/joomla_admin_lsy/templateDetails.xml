@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="1.0.0" client="administrator">
+   <name>Joomla Admin LSY</name>
+   <creationDate>11/05/2005</creationDate>
+   <author>George Lewe</author>
+   <copyright>GNU/GPL</copyright>
+   <authorEmail>george@lewe.com</authorEmail>
+   <authorUrl>http://www.lewe.com</authorUrl>
+   <version>1.0</version>
+   <description>&lt;img SRC="templates/joomla_admin_lsy/images/frontpage.png" BORDER="0" ALIGN="LEFT" ALT="Joomla Admin LSY Template"/&gt;
+    LSY Backend Template for Joomla! Administration by George Lewe (http://www.lewe.com).&lt;br /&gt;
+    The icon set bases on the Nuvola design by David Vignoni (http://www.icon-king.com).&lt;br /&gt;
+    &lt;br /&gt;
+    Optionally you can overwrite some files outside the templates directory in order to enjoy the full beauty of the skin.&lt;br /&gt;
+    The new files have been copied to the 'joomla_admin_lsy' template directory and the its 'images' directory. Also you will find
+    a readme.txt file there giving the details.&lt;br /&gt;
+    &lt;br /&gt;
+    Replace the following (after backing the originals up of course).:&lt;br /&gt;
+    &lt;br /&gt;
+    {mosPath}/administrator/module/mod_quickicon.php (Joomla 1.0.3)&lt;br /&gt;
+    {mosPath}/includes/js/overlib_mini.js&lt;br /&gt;
+    {mosPath}/includes/js/tabs/tab.png&lt;br /&gt;
+    {mosPath}/includes/js/tabs/tab_active.png&lt;br /&gt;
+    {mosPath}/includes/js/tabs/tab_hover.png&lt;br /&gt;
+    {mosPath}/includes/js/tabs/tab_hover.png&lt;br /&gt;
+    {mosPath}/includes/js/ThemeOffice/tooltip.png&lt;br /&gt;
+    &lt;br /&gt;
+    Hope you enjoy it,&lt;br /&gt;
+    George</description>
+   <files>
+      <filename>cpanel.php</filename>
+      <filename>index.html</filename>
+      <filename>index.php</filename>
+      <filename>login.php</filename>
+      <filename>template_thumbnail.png</filename>
+      <filename>mod_quickicon.php</filename>
+      <filename>overlib_mini.js</filename>
+      <filename>readme.txt</filename>
+   </files>
+   <images>
+      <filename>images/addcontent.png</filename>
+      <filename>images/addedit.png</filename>
+      <filename>images/apply.png</filename>
+      <filename>images/apply_f2.png</filename>
+      <filename>images/archive.png</filename>
+      <filename>images/archive_f2.png</filename>
+      <filename>images/arrow.gif</filename>
+      <filename>images/background.gif</filename>
+      <filename>images/background.jpg</filename>
+      <filename>images/backup.png</filename>
+      <filename>images/browser.png</filename>
+      <filename>images/categories.png</filename>
+      <filename>images/checkin.png</filename>
+      <filename>images/config.png</filename>
+      <filename>images/copy.png</filename>
+      <filename>images/copy_f2.png</filename>
+      <filename>images/cpanel.png</filename>
+      <filename>images/dbrestore.png</filename>
+      <filename>images/delete.png</filename>
+      <filename>images/delete_f2.png</filename>
+      <filename>images/edit.png</filename>
+      <filename>images/edit_f2.png</filename>
+      <filename>images/frontpage.png</filename>
+      <filename>images/generic.png</filename>
+      <filename>images/header_bg.png</filename>
+      <filename>images/header_icon.png</filename>
+      <filename>images/header_text.png</filename>
+      <filename>images/help.png</filename>
+      <filename>images/help_f2.png</filename>
+      <filename>images/impressions.png</filename>
+      <filename>images/inbox.png</filename>
+      <filename>images/install.png</filename>
+      <filename>images/install_logo.png</filename>
+      <filename>images/langmanager.png</filename>
+      <filename>images/login.gif</filename>
+      <filename>images/login_header.png</filename>
+      <filename>images/massemail.png</filename>
+      <filename>images/mediamanager.png</filename>
+      <filename>images/menu.png</filename>
+      <filename>images/message_config.png</filename>
+      <filename>images/module.png</filename>
+      <filename>images/move.png</filename>
+      <filename>images/move_f2.png</filename>
+      <filename>images/new.png</filename>
+      <filename>images/new_f2.png</filename>
+      <filename>images/preview.png</filename>
+      <filename>images/preview_f2.png</filename>
+      <filename>images/publish.png</filename>
+      <filename>images/publish_f2.png</filename>
+      <filename>images/query.png</filename>
+      <filename>images/save.png</filename>
+      <filename>images/save_f2.png</filename>
+      <filename>images/searchtext.png</filename>
+      <filename>images/sections.png</filename>
+      <filename>images/security.png</filename>
+      <filename>images/systeminfo.png</filename>
+      <filename>images/tab.png</filename>
+      <filename>images/tab_active.png</filename>
+      <filename>images/tab_hover.png</filename>
+      <filename>images/templatemanager.png</filename>
+      <filename>images/tooltip.png</filename>
+      <filename>images/trash.png</filename>
+      <filename>images/unarchive.png</filename>
+      <filename>images/unarchive_f2.png</filename>
+      <filename>images/unpublish.png</filename>
+      <filename>images/unpublish_f2.png</filename>
+      <filename>images/user.png</filename>
+      <filename>images/version.png</filename>
+   </images>
+   <css>
+      <filename>css/admin_login.css</filename>
+      <filename>css/template_css.css</filename>
+      <filename>css/theme.css</filename>
+   </css>
+</mosinstall>

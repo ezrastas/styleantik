@@ -1,0 +1,318 @@
+//
+// Buttons
+// --------------------------------------------------
+
+@btnFontSize: 16px;
+@btnLineHeight: 20px;
+@btnHeight: 41px;
+@btnPadding: ((@btnHeight - @btnLineHeight)/2) 15px
+  ((@btnHeight - @btnLineHeight)/2) 15px;
+@btnBorderRadius: @baseBorderRadius;
+
+@btnColor: @white;
+@btnColorHighlight: @white;
+
+@btnBackground: #292929;
+@btnHighlightBackground: @headingsColor;
+@btnActBackground: @globalColor;
+@btnBorder: 1px solid #292929;
+
+// Info button(Read More)
+
+@btnInfoColor: @btnColor;
+@btnInfoColorHighlight: @btnColorHighlight;
+
+@btnInfoBackground: @btnBackground;
+@btnInfoHighlightBackground: @btnHighlightBackground;
+@btnActInfoBackground: @btnActBackground;
+
+@btnInfoBorder: @btnBorder;
+
+// Base styles
+// --------------------------------------------------
+
+// Core
+
+.buttonBackgroundAlt(@bgColor, @textColor) {
+  background: @bgColor;
+  color: @textColor;
+}
+
+.btn {
+  border: @btnBorder;
+  .border-radius(@btnBorderRadius);
+  background: @btnBackground;
+   #gradient.vertical-three-colors(@btnBackground, @btnBackground, 50%, @btnBackground); 
+  color: @btnColor;
+  cursor: pointer;
+  display: inline-block;
+  font-size: @btnFontSize;
+  line-height: @btnLineHeight;
+  outline: none;
+  padding: 0;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+  overflow: hidden;
+  font-family: @sansFontFamily;
+  .transition(all 0.4s ease);
+  .fa {
+    margin: 0 3px;
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    font-size: 13px;
+    pointer-events: none;
+    //line-height: @btnLineHeight;
+  }
+ > span {
+    position: relative;
+    pointer-events: none;
+    padding: @btnPadding;
+    display: inline-block;
+    @media (min-width: 768px) and (max-width: 979px) {
+     padding: 10px 10px;
+     font-size: 12px;
+    }
+    @media (min-width: 541px) and (max-width: 767px) { 
+       padding: 10px 10px;
+      font-size: 12px;
+    }
+
+  }
+  &:before {
+    #gradient.vertical-three-colors(@globalColor, @globalColor, 50%, @globalColorgradient);
+    content: "";
+    height: 100%;
+    left: 0px;
+    //right: -1px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transform: scale3d(0.7, 1, 1);
+    transition-delay: 0s, 0s;
+    transition-duration: 0.4s, 0.4s;
+    transition-property: transform, opacity;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    width: 101%;
+    //z-index: -1;
+    pointer-events: none;
+  }
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+    pointer-events: none;
+  }
+  &:hover,
+  
+  &.active,
+  &.selected {
+    outline: none;
+    //background: @btnActBackground;
+    color: @btnColorHighlight;
+    //.gradient(@globalColor, darken(@globalColor,10%));
+    &:before {
+       opacity: 1;
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+    }
+  }
+  &.jmodedit {
+    &:hover,
+  
+    &:active {
+      > span {
+        .transform(rotateX(0deg) translateY(0px));
+      }
+    }
+  }
+}
+.row-box-cart {
+  .btn{
+    .fa {
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+form .btn{
+
+}
+
+// Button Sizes
+// --------------------------------------------------
+
+// Large
+.btn-large {
+  padding: @paddingLarge;
+  font-size: @fontSizeLarge;
+  .border-radius(@baseBorderRadius);
+}
+
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+  margin-top: 4px;
+}
+
+// Small
+.btn-small {
+  padding: @paddingSmall;
+  font-size: @fontSizeSmall;
+  .border-radius(@baseBorderRadius);
+}
+
+.btn-small [class^="icon-"],
+.btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+
+.btn-mini [class^="icon-"],
+.btn-mini [class*=" icon-"] {
+  margin-top: -1px;
+}
+
+// Mini
+.btn-mini {
+  padding: @paddingMini;
+  font-size: @fontSizeMini;
+  .border-radius(@baseBorderRadius);
+}
+
+// Block button
+// -------------------------
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  .box-sizing(border-box);
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+// Alternate buttons
+// --------------------------------------------------
+
+// Provide *some* extra contrast for those who can get it
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, .75);
+}
+
+// Set the backgrounds
+// -------------------------
+// Warning appears are orange
+.btn-warning {
+  .buttonBackgroundAlt(@btnWarningBackground, @btnColor);
+  &:hover {
+    .buttonBackgroundAlt(@btnWarningBackgroundHighlight, @btnColorHighlight);
+  }
+}
+
+// Danger and error appear as red
+.btn-danger {
+  .buttonBackgroundAlt(@btnDangerBackground, @btnColor);
+  &:hover {
+    .buttonBackgroundAlt(@btnDangerBackgroundHighlight, @btnColorHighlight);
+  }
+}
+
+// Success appears as green
+.btn-success {
+  .buttonBackgroundAlt(@btnSuccessBackground, @btnColor);
+  &:hover {
+    .buttonBackgroundAlt(@btnSuccessBackgroundHighlight, @btnColorHighlight);
+  }
+}
+
+.btn-info,.cancel , .cance-shop .btn {
+  background: @btnInfoHighlightBackground;
+  #gradient.vertical-three-colors(@globalColor, @globalColor, 50%, @globalColorgradient);
+  color: @btnColor;
+  //.transition(all 0.4s ease);
+  &:before {
+     #gradient.vertical-three-colors(@btnBackground, @btnBackground, 50%, @btnBackground)!important;
+      
+    }
+  &:hover {
+    //background: @btnInfoBackground;
+    color: @btnColorHighlight;
+     &:before {
+      //.gradient(@btnBackground, darken(@btnBackground,10%));
+      //#gradient.vertical-three-colors(@btnBackground, @btnBackground, 50%, @btnBackground);
+       opacity: 1;
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+
+    }
+  }
+}
+
+// Inverse appears as dark gray
+.btn-inverse {
+  .buttonBackgroundAlt(@btnInverseBackground, @btnColor);
+  &:hover {
+    .buttonBackgroundAlt(@btnInverseBackgroundHighlight, @btnColorHighlight);
+  }
+}
+
+// Cross-browser Jank@
+// --------------------------------------------------
+
+button.btn,
+input[type="submit"].btn {
+  // Firefox 3.6 only I believe
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+}
+
+// Link buttons
+// --------------------------------------------------
+
+// Make a button look and behave like a link
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  .box-shadow(none);
+}
+
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: @linkColor;
+  .border-radius(0);
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  color: @linkHoverColor;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.btn-link[disabled]:hover,
+.btn-link[disabled]:focus {
+  color: @grayDark;
+  text-decoration: none;
+}

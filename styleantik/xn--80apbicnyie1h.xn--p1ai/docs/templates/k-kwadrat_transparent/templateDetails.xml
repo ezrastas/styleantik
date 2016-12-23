@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="4.5.2">
+	<name>K-Kwadrat Transparent</name>
+	<creationDate>January 11, 2005</creationDate>
+	<author>Kamil Wais</author>
+	<copyright>This template is released under the GNU/GPL License</copyright>
+	<authorEmail>poczta@kamilwais.tanihost.com</authorEmail>
+	<authorUrl>www.kamil.rzeszow.pl</authorUrl>
+	<version>1.01</version>
+	<description>A tableless 3 column variable width template with a bottom background image. Now works well with IE and Firefox. Demo on http://www.kamil.rzeszow.pl. Template is based on Rocky Mountain Sunrise template created by Randy Carver (www.carver-family.com)and some JavaScript by hotsnoj.</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<images>
+		<filename>images/sunset.jpg</filename>
+	</images>
+	<css>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>
