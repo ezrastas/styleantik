@@ -625,6 +625,7 @@ h5.heading-style-4,
 h6.heading-style-4,
 .nav-tab li.heading-style-4 {
   font-size: 17.5px;
+  display: none;
   line-height: 30px;
   margin-bottom: 20px;
 }
@@ -10763,13 +10764,13 @@ label[for=mod_virtuemart_search] button {
 .comvirtuemartmod form#paymentForm .userfields_info {
   font-weight: bold;
   margin-bottom: 24px;
-  display: block;
+  display: none;
 }
 #com_virtuemart form#adminForm .userfields_info,
 .comvirtuemartmod form#adminForm .userfields_info {
   font-weight: bold;
   margin-bottom: 24px;
-  display: block;
+  display: none;
   text-align: center;
 }
 #com_virtuemart form#adminForm .buttonBar-right,
@@ -10856,6 +10857,7 @@ label[for=mod_virtuemart_search] button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  display: none;
 }
 #com_virtuemart .vmshipment_name,
 .comvirtuemartmod .vmshipment_name,

@@ -227,33 +227,7 @@ jQuery(function($){
 			(!VmConfig::get('oncheckout_opc',true) && VmConfig::get('oncheckout_show_steps',false) &&
 				!empty($this->cart->virtuemart_shipmentmethod_id) )
 		){ ?>
-		<tr class="sectiontableentry1">
-			<td class="setcols" colspan="4">
-			<?php if (!$this->cart->automaticSelectedShipment){
-				echo '<'.$template->params->get('categoryItemHeading').'>'.vmText::_ ('COM_VIRTUEMART_CART_SELECTED_SHIPMENT').'</'.$template->params->get('categoryItemHeading').'>';
-				echo $this->cart->cartData['shipmentName'];
-				if (!empty($this->layoutName) and $this->layoutName == 'default') {
-					if (VmConfig::get('oncheckout_opc', 0)) {
-						$previouslayout = $this->setLayout('select');
-						echo $this->loadTemplate('shipment');
-						$this->setLayout($previouslayout);
-					} else {
-						echo '<br>'.JHtml::_('link', JRoute::_('index.php?option=com_virtuemart&view=cart&task=edit_shipment', $this->useXHTML, $this->useSSL), $this->select_shipment_text, 'class="btn"');
-					}
-				} else {
-					echo vmText::_ ('COM_VIRTUEMART_CART_SHIPPING');
-				}
-			} else {
-				echo '<'.$template->params->get('categoryItemHeading').'>'.vmText::_ ('COM_VIRTUEMART_CART_SELECTED_SHIPMENT').'</'.$template->params->get('categoryItemHeading').'>';
-				echo $this->cart->cartData['shipmentName'];
-			} ?>
-			</td>
-			<?php if (VmConfig::get('show_tax')) { ?>
-			<td><span  class="priceColor2"><?php echo $this->currencyDisplay->createPriceDiv ('shipmentTax', '', $this->cart->cartPrices['shipmentTax'], FALSE); ?></div></td>
-			<?php } ?>
-			<td><?php if($this->cart->cartPrices['salesPriceShipment'] < 0) echo $this->currencyDisplay->createPriceDiv ('salesPriceShipment', '', $this->cart->cartPrices['salesPriceShipment'], FALSE); ?></td>
-			<td><?php echo $this->currencyDisplay->createPriceDiv ('salesPriceShipment', '', $this->cart->cartPrices['salesPriceShipment'], FALSE); ?></td>
-		</tr>
+
 		<?php }
 		if ($this->cart->pricesUnformatted['salesPrice']>0.0 and
 			(VmConfig::get('oncheckout_opc',true) or
@@ -261,33 +235,7 @@ jQuery(function($){
 				( (!VmConfig::get('oncheckout_opc',true) and VmConfig::get('oncheckout_show_steps',false) ) and !empty($this->cart->virtuemart_paymentmethod_id))
 			)
 		){ ?>
-		<tr class="sectiontableentry1">
-			<td class="setcols" colspan="4">
-			<?php if (!$this->cart->automaticSelectedPayment){
-				echo '<'.$template->params->get('categoryItemHeading').'>'.vmText::_ ('COM_VIRTUEMART_CART_SELECTED_PAYMENT').'</'.$template->params->get('categoryItemHeading').'>';
-				echo $this->cart->cartData['paymentName'];
-				if (!empty($this->layoutName) && $this->layoutName == 'default') {
-					if (VmConfig::get('oncheckout_opc', 0)){
-						$previouslayout = $this->setLayout('select');
-						echo $this->loadTemplate('payment');
-						$this->setLayout($previouslayout);
-					} else {
-						echo '<br>'.JHtml::_('link', JRoute::_('index.php?option=com_virtuemart&view=cart&task=editpayment', $this->useXHTML, $this->useSSL), $this->select_payment_text, 'class="btn"');
-					}
-				} else {
-					echo vmText::_('COM_VIRTUEMART_CART_PAYMENT');
-				}
-			} else {
-				echo '<'.$template->params->get('categoryItemHeading').'>'.vmText::_ ('COM_VIRTUEMART_CART_SELECTED_PAYMENT').'</'.$template->params->get('categoryItemHeading').'>';
-				echo $this->cart->cartData['paymentName'];
-			} ?>
-			</td>
-			<?php if (VmConfig::get ('show_tax')){ ?>
-			<td><div class="priceColor2"><?php echo $this->currencyDisplay->createPriceDiv ('paymentTax', '', $this->cart->cartPrices['paymentTax'], FALSE); ?></span></td>
-			<?php } ?>
-			<td><?php if($this->cart->cartPrices['salesPricePayment'] < 0) echo $this->currencyDisplay->createPriceDiv ('salesPricePayment', '', $this->cart->cartPrices['salesPricePayment'], FALSE); ?></td>
-			<td><?php  echo $this->currencyDisplay->createPriceDiv ('salesPricePayment', '', $this->cart->cartPrices['salesPricePayment'], FALSE); ?></td>
-		</tr>
+
 		<?php } ?>
 		<tr class="sectiontableentry2 sectiontableentry__desktop">
 			<td class="setcols" colspan="4"><strong><?php echo vmText::_ ('COM_VIRTUEMART_CART_TOTAL') ?></strong></td>
